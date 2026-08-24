@@ -1,0 +1,1704 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Echo</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<style>
+/* ===== Design tokens — confirmed via Figma MCP (file BhdhmiLdIBl4c4ShcM5ZET, page "Design System") ===== */
+:root{
+  --bg:#00030c;
+  --wine:#852252;
+  --wine-a16:rgba(133,34,82,0.16);
+  --wine-a24:rgba(133,33,82,0.24);
+  --wine-glow:rgba(133,34,82,0.25);
+  --pink:#ff95ba;
+  --pink-a10:rgba(255,149,186,0.1);
+  --violet:#c486f7;
+  --violet-a10:rgba(196,135,247,0.1);
+  --olive:#e0d22f;
+  --olive-a10:rgba(224,210,47,0.1);
+  --border-default:rgba(245,201,214,0.1);
+  --border-default-strong:rgba(245,201,214,0.2);
+  --border-white:rgba(255,255,255,0.16);
+  --border-active:#852252;
+  --text-primary:#ffffff;
+  --text-secondary:#dcc8d6;
+  --purple-fill:rgba(93,25,146,0.16);
+  --primitive-black-950:#00030c;
+  --primitive-magenta-500:#d53db2;
+  --r-sm:8px;
+  --r-md:12px;
+  --r-lg:16px;
+  --r-xl:24px;
+  --r-pill:999px;
+  --inset-glow: inset 2px 2px 2px 0 rgba(176,72,122,.08), inset -2px -2px 2px 0 rgba(179,76,126,.08);
+  --card-glow: 0 0 8px 0 var(--wine-glow);
+}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{
+  background:#040106;
+  min-height:100vh;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Google Sans Flex','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+.voice{font-family:'Pacifico',cursive;font-weight:400;line-height:1.2;color:var(--text-primary);margin:0;}
+.phone{
+  position:relative;
+  width:375px;height:812px;max-width:100vw;max-height:100vh;
+  background:var(--bg);
+  border-radius:var(--r-xl);
+  overflow:hidden;
+  box-shadow:0 40px 90px -30px rgba(0,0,0,.8);
+}
+.glow{
+  position:absolute;top:-115px;left:60px;width:251px;height:244px;
+  border-radius:50%;
+  background:linear-gradient(180deg, #B239D3 50%, #920BB4 99.79%);
+  opacity:0.5;
+  filter:blur(100px);
+  pointer-events:none;z-index:0;
+}
+.screen{
+  position:absolute;left:0;right:0;z-index:1;
+  top:max(24px, env(safe-area-inset-top));
+  bottom:max(32px, env(safe-area-inset-bottom));
+  display:flex;flex-direction:column;
+}
+.screen.hidden{display:none;}
+.screen-content{flex:1;min-height:0;overflow-y:auto;padding:16px 24px 24px;display:flex;flex-direction:column;gap:16px;}
+#screen-draw .screen-content{padding-bottom:8px;gap:12px;}
+.screen-content::-webkit-scrollbar{display:none;}
+#screen-circles .screen-content{
+  scrollbar-width:thin;scrollbar-color:rgba(220,200,214,0.5) transparent;
+  -webkit-mask-image:linear-gradient(to bottom, transparent 0, #000 16px, #000 calc(100% - 16px), transparent 100%);
+  mask-image:linear-gradient(to bottom, transparent 0, #000 16px, #000 calc(100% - 16px), transparent 100%);
+}
+#screen-circles .screen-content::-webkit-scrollbar{display:block;width:2px;}
+#screen-circles .screen-content::-webkit-scrollbar-track{background:transparent;}
+#screen-circles .screen-content::-webkit-scrollbar-thumb{background:rgba(220,200,214,0.5);border-radius:999px;}
+
+/* glass surface base */
+.glass{
+  background:var(--wine-a16);
+  backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  border:1px solid var(--border-default);
+  box-shadow:var(--inset-glow);
+}
+
+/* buttons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  height:56px;flex-shrink:0;padding:0 24px;border-radius:var(--r-pill);
+  font-family:inherit;font-weight:600;font-size:16px;color:#fff;
+  border:1px solid transparent;cursor:pointer;user-select:none;
+  transition:background .3s ease-in-out, border-color .3s ease-in-out, filter .3s ease-in-out, color .3s ease-in-out;
+}
+.btn-primary{
+  position:relative;
+  z-index:0;
+  background:
+    radial-gradient(38% 55% at 96% 71%, rgba(255,255,255,.05) 0%, rgba(255,255,255,0) 100%),
+    radial-gradient(44% 33% at 7% 33%, rgba(255,255,255,.03) 0%, rgba(255,255,255,0) 100%),
+    radial-gradient(92% 97% at 8% 19%, rgba(213,61,178,1) 0%, rgba(177,38,177,1) 50%, rgba(142,14,177,1) 100%);
+  border-color:var(--border-white);
+  box-shadow:0 8px 24px -8px rgba(177,38,177,.55);
+}
+.btn-primary::after{
+  content:'';
+  position:absolute;inset:0;border-radius:inherit;
+  z-index:-1;
+  background:
+    radial-gradient(175.2% 59.57% at 96.02% 70.54%, rgba(255,255,255,.21) 0%, rgba(255,255,255,0) 100%),
+    radial-gradient(151.67% 43.34% at 6.57% 33.04%, rgba(255,255,255,.14) 0%, rgba(255,255,255,0) 100%),
+    radial-gradient(91.75% 96.92% at 8.26% 18.75%, #D53DB2 0%, #8E0EB1 100%);
+  opacity:0;
+  transition:opacity .3s ease-in-out;
+  pointer-events:none;
+}
+.btn-primary:hover::after,.btn-primary:active::after{opacity:1;}
+.btn-secondary{background:var(--purple-fill);border-color:var(--border-white);backdrop-filter:blur(3px);}
+.btn-secondary:hover,.btn-secondary:active{
+  background:radial-gradient(70% 130% at 50% 0%, rgba(133,34,82,.16), transparent 70%), var(--wine-a16);
+}
+.btn-icon{width:48px;height:48px;padding:0;border-radius:var(--r-pill);background:var(--purple-fill);border:1px solid var(--border-white);flex-shrink:0;color:var(--text-primary);}
+.btn-icon:hover,.btn-icon:active{
+  background:radial-gradient(70% 130% at 50% 0%, rgba(133,34,82,.16), transparent 70%), var(--wine-a16);
+}
+.btn-block{width:100%;}
+.icon{display:inline-flex;width:24px;height:24px;}
+.icon svg{width:100%;height:100%;}
+
+/* header rows */
+.header-row{display:flex;align-items:center;gap:12px;}
+#screen-circles > .header-row{padding:16px 24px 8px;flex-shrink:0;}
+.header-titles{display:flex;flex-direction:column;gap:2px;min-width:0;flex:1;}
+.lang-toggle{width:auto;min-width:48px;height:48px;padding:0 14px;font-family:inherit;font-weight:600;font-size:13px;letter-spacing:.02em;flex-shrink:0;color:var(--text-primary);}
+.header-titles h1{font-size:28px;line-height:1.5;white-space:nowrap;overflow-x:hidden;overflow-y:visible;text-overflow:ellipsis;padding:4px 0;}
+
+/* tags */
+.tag{display:inline-flex;padding:3px 9px;border-radius:999px;font-size:12px;line-height:1;width:fit-content;white-space:nowrap;}
+.tag.new{background:var(--violet-a10);color:var(--violet);}
+.tag.relationship{background:var(--pink-a10);color:var(--pink);}
+.tag.friendship{background:var(--olive-a10);color:var(--olive);}
+
+/* progress */
+.progress-track{width:100%;height:2px;border-radius:999px;background:var(--pink-a10);overflow:hidden;}
+.progress-fill{height:100%;background:var(--wine);border-radius:999px;transition:width .3s;}
+
+/* ===== Circles list screen ===== */
+#circles-list{display:flex;flex-direction:column;gap:8px;}
+.circle-card{
+  padding:16px;border-radius:var(--r-xl);
+  background:var(--wine-a16);backdrop-filter:blur(3px);
+  border:1px solid var(--wine);
+  box-shadow:var(--card-glow), var(--inset-glow);
+  display:flex;flex-direction:column;gap:12px;cursor:pointer;
+}
+.circle-card-row{display:flex;align-items:center;gap:12px;}
+.circle-avatar{width:44px;height:44px;border-radius:50%;background:var(--wine-a24);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.circle-avatar span{font-family:'Pacifico';font-size:18px;color:var(--pink);}
+.circle-info{flex:1;display:flex;flex-direction:column;gap:4px;min-width:0;}
+.circle-name{font-family:'Pacifico';font-size:16px;color:#fff;line-height:1.5;white-space:nowrap;overflow-x:hidden;overflow-y:visible;text-overflow:ellipsis;padding:2px 0;}
+.circle-meta{font-size:12px;color:var(--text-secondary);opacity:.7;flex-shrink:0;}
+
+.circle-card-empty{
+  text-align:center;padding:24px;display:flex;flex-direction:column;align-items:center;gap:16px;
+  border-radius:var(--r-xl);background:var(--wine-a16);backdrop-filter:blur(3px);
+  border:1px solid var(--wine);box-shadow:var(--card-glow), var(--inset-glow);
+}
+.circle-card-empty h2{font-family:'Pacifico';font-size:24px;color:var(--pink);margin:0;}
+.circle-card-empty p{font-size:12px;line-height:1.5;color:var(--text-secondary);margin:0;max-width:244px;}
+.divider{width:100%;height:1px;background:linear-gradient(90deg, #1E0813 0%, #842252 50%, #1E0813 100%);}
+
+.mascot-hero{display:flex;align-items:center;justify-content:center;padding:8px 0 16px;flex-shrink:0;}
+.mascot-hero svg{width:calc(220px * var(--mascot-scale, 1));height:calc(220px * var(--mascot-scale, 1));filter:drop-shadow(0 0 40px rgba(255,149,186,.35));transition:width .3s ease, height .3s ease;}
+.mascot-hero img,.mascot-hero video{width:calc(290px * var(--mascot-scale, 1));height:calc(290px * var(--mascot-scale, 1));object-fit:cover;transition:width .3s ease, height .3s ease;}
+
+/* ===== Splash screen ===== */
+.splash-content{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;}
+.splash-logo{flex-shrink:0;}
+
+.fab{position:absolute;right:24px;bottom:34px;width:56px;height:56px;border-radius:50%;padding:0;display:flex;align-items:center;justify-content:center;z-index:2;}
+
+/* ===== New circle screen ===== */
+.new-circle-top{display:flex;align-items:center;gap:16px;}
+.new-circle-titles{flex:1;display:flex;flex-direction:column;gap:8px;min-width:0;}
+.new-circle-titles h1{font-size:28px;}
+.new-circle-titles p{font-size:12px;color:var(--text-secondary);opacity:.7;margin:0;}
+.mascot-small{width:80px;height:80px;flex-shrink:0;}
+.mascot-small svg{width:100%;height:100%;filter:drop-shadow(0 0 20px rgba(255,149,186,.4));}
+.mascot-small img{width:100%;height:100%;object-fit:contain;}
+
+.field-group{display:flex;flex-direction:column;gap:8px;}
+.field-label{font-size:14px;color:var(--text-secondary);}
+.field{
+  width:100%;height:48px;padding:0 12px;border-radius:var(--r-sm);
+  background:var(--wine-a16);backdrop-filter:blur(3px);
+  border:1px solid var(--border-default);box-shadow:var(--inset-glow);
+  color:var(--text-primary);font-size:16px;font-family:inherit;
+}
+.field::placeholder{color:var(--text-secondary);opacity:.7;}
+.field:focus{outline:none;border-color:var(--border-active);}
+.field:-webkit-autofill,
+.field:-webkit-autofill:hover,
+.field:-webkit-autofill:focus{
+  -webkit-text-fill-color:var(--text-primary);
+  -webkit-box-shadow:0 0 0px 1000px rgba(133,34,82,0.16) inset;
+  box-shadow:0 0 0px 1000px rgba(133,34,82,0.16) inset;
+  transition:background-color 5000s ease-in-out 0s;
+  caret-color:var(--text-primary);
+}
+.field-error{font-size:12px;color:var(--pink);display:none;}
+.field-error.show{display:block;}
+
+.option-list{display:flex;flex-direction:column;gap:12px;}
+.option-card{
+  display:flex;gap:12px;align-items:center;padding:12px;border-radius:var(--r-lg);
+  background:var(--wine-a16);backdrop-filter:blur(3px);
+  border:1px solid var(--border-default-strong);box-shadow:var(--inset-glow);
+  cursor:pointer;
+}
+.option-card.selected{border-color:var(--border-active);}
+.option-icon-tile{
+  width:36px;height:36px;border-radius:var(--r-md);flex-shrink:0;
+  border:1px solid var(--wine);background:var(--wine-a16);backdrop-filter:blur(3px);
+  display:flex;align-items:center;justify-content:center;box-shadow:var(--inset-glow);
+  color:var(--primitive-magenta-500);
+}
+.option-icon-tile .icon{width:18px;height:18px;}
+.option-body{flex:1;display:flex;flex-direction:column;gap:4px;min-width:0;}
+.option-title{font-size:16px;color:var(--text-primary);}
+.option-desc{font-size:12px;color:var(--text-secondary);opacity:.7;}
+.radio{width:24px;height:24px;flex-shrink:0;position:relative;}
+.radio::before{content:'';position:absolute;inset:4px;border:1.5px solid var(--border-default-strong);border-radius:50%;}
+.option-card.selected .radio::before{border-color:var(--pink);}
+.option-card.selected .radio::after{content:'';position:absolute;inset:8px;background:var(--pink);border-radius:50%;}
+
+.newcircle-footer{padding:8px 24px 8px;flex-shrink:0;}
+
+/* ===== Draw screen ===== */
+.draw-progress{display:flex;flex-direction:column;gap:8px;padding:0 4px;}
+.draw-progress-labels{display:flex;justify-content:space-between;font-size:12px;color:var(--text-secondary);opacity:.7;}
+
+.draw-card-wrap{perspective:1400px;flex:1;min-height:340px;}
+.draw-card{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .5s cubic-bezier(.4,0,.2,1);}
+.draw-card.completed{cursor:default;}
+.draw-card.flipped{transform:rotateY(180deg);}
+.draw-card-face{
+  position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;
+  border-radius:var(--r-xl);border:1px solid var(--wine);
+  background:var(--primitive-black-950);backdrop-filter:blur(6px);
+  box-shadow:var(--card-glow), var(--inset-glow);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:32px 24px;text-align:center;gap:16px;
+}
+.draw-card-back{
+  transform:rotateY(180deg);
+  background:
+    radial-gradient(38.82% 38.82% at 50.15% 0%, rgba(133,34,82,0.16) 0%, rgba(133,34,82,0) 100%),
+    rgba(133,34,82,0.16);
+}
+.card-edit-btn{
+  position:absolute;top:20px;right:20px;
+  width:40px;height:40px;padding:0;border-radius:var(--r-pill);
+  background:transparent;border:none;color:var(--text-primary);
+  display:flex;align-items:center;justify-content:center;cursor:pointer;
+}
+.card-edit-btn:hover,.card-edit-btn:active{background:transparent;border:none;}
+.card-edit-btn .icon{width:18px;height:18px;}
+.draw-card-front video{width:72%;max-width:230px;aspect-ratio:1/1;object-fit:contain;transition:opacity .3s ease;}
+.draw-card-tagline{font-family:'Pacifico';font-size:16px;color:var(--pink);text-align:center;margin:0;}
+.draw-complete-subtitle{display:none;font-size:12px;line-height:1.5;color:var(--text-secondary);opacity:.7;text-align:center;max-width:260px;margin:0;}
+.draw-question-text{font-family:'Pacifico';font-size:26px;line-height:1.35;color:var(--pink);}
+
+.draw-footer{flex-shrink:0;padding:16px 24px 8px;height:80px;display:flex;align-items:center;}
+.draw-helper-text{width:100%;text-align:center;font-size:14px;color:var(--text-secondary);opacity:.7;}
+.draw-actions{display:none;width:100%;gap:16px;}
+.draw-actions.show{display:flex;}
+.draw-actions .btn{flex:1;padding:0 16px;}
+
+/* ===== Note modal ===== */
+.modal-backdrop{
+  position:absolute;inset:0;z-index:10;overflow:hidden;
+  background:rgba(0,3,12,.5);backdrop-filter:blur(5px);
+  display:flex;align-items:flex-end;justify-content:center;
+  opacity:0;pointer-events:none;transition:opacity .25s;
+}
+.modal-backdrop.show{opacity:1;pointer-events:auto;}
+.note-sheet{
+  position:relative;width:100%;
+  background:linear-gradient(180deg,#170f1e 0%, var(--bg) 60%);
+  border:1px solid var(--border-active);border-bottom:none;border-top-left-radius:24px;border-top-right-radius:24px;
+  padding:20px 16px 32px;box-shadow:var(--card-glow);
+  display:flex;flex-direction:column;gap:16px;
+  transform:translateY(100%);transition:transform .3s;
+}
+.modal-backdrop.show .note-sheet{transform:translateY(0);}
+.note-sheet-header{display:flex;flex-direction:column;gap:8px;}
+.note-sheet h3{font-family:'Pacifico';font-size:18px;color:#fff;margin:0;}
+.note-close-btn{
+  position:absolute;top:12px;right:12px;width:24px;height:24px;padding:0;
+  background:transparent;border:none;color:var(--text-secondary);cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+}
+.note-close-btn:hover,.note-close-btn:active{background:transparent;border:none;}
+.note-close-btn .icon{width:24px;height:24px;}
+.note-sheet .note-sub{font-size:12px;line-height:1.5;color:var(--text-secondary);opacity:.7;margin:0;}
+.note-body{display:flex;flex-direction:column;gap:24px;width:100%;}
+.note-textarea{
+  width:100%;min-height:104px;border-radius:var(--r-sm);
+  background:var(--wine-a16);border:1px solid var(--border-default);backdrop-filter:blur(3px);
+  color:var(--text-primary);font-family:inherit;font-size:16px;padding:12px;resize:vertical;
+}
+.note-textarea::placeholder{color:var(--text-secondary);opacity:.5;}
+.note-textarea:focus{outline:none;border-color:var(--border-active);}
+.note-actions{display:flex;gap:12px;}
+.note-actions .btn{flex:1;}
+
+/* ===== Dialog menu sheet ===== */
+.menu-list{display:flex;flex-direction:column;gap:8px;}
+.menu-item{
+  display:flex;align-items:center;gap:8px;width:100%;height:48px;
+  padding:0 12px;border-radius:var(--r-lg);background:transparent;border:none;
+  font-family:inherit;font-size:16px;color:var(--text-secondary);cursor:pointer;text-align:left;
+  transition:background .3s ease-in-out;
+}
+.menu-item:hover,.menu-item:active{background:var(--wine-a16);}
+.menu-item .icon{width:24px;height:24px;flex-shrink:0;color:var(--text-secondary);}
+
+/* ===== Notes history screen ===== */
+.notes-subtitle{font-size:12px;color:var(--text-secondary);opacity:.7;margin:0;}
+.notes-list{display:flex;flex-direction:column;gap:12px;flex:1;}
+.notes-list.empty{align-items:center;justify-content:center;gap:16px;text-align:center;padding-bottom:40px;}
+.note-item{
+  padding:16px;border-radius:var(--r-lg);cursor:pointer;width:100%;
+  background:var(--wine-a16);backdrop-filter:blur(3px);
+  border:1px solid var(--border-default-strong);box-shadow:var(--inset-glow);
+  display:flex;flex-direction:column;gap:8px;
+}
+.note-item-question{font-family:'Pacifico';font-size:16px;line-height:1.2;color:var(--pink);}
+.note-item-text{font-size:12px;line-height:1.5;color:var(--text-secondary);opacity:.7;}
+.notes-empty-title{font-family:'Pacifico';font-size:24px;line-height:1.2;color:var(--pink);margin:0;}
+.notes-empty-subtitle{font-size:12px;line-height:1.5;color:var(--text-secondary);opacity:.7;margin:0;}
+
+/* ===== Auth screen ===== */
+#screen-auth > .header-row{padding:16px 24px 0;flex-shrink:0;justify-content:flex-end;}
+#screen-auth > .screen-content{justify-content:flex-end;}
+.auth-header{display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;}
+.auth-header .mascot-small{width:96px;height:96px;}
+.auth-header p{margin:0;font-size:12px;line-height:1.5;color:var(--text-secondary);opacity:.7;}
+#auth-status-text{font-size:12px;color:var(--text-secondary);opacity:.7;text-align:center;margin:0;}
+#auth-status-text:empty{display:none;}
+
+/* ===== Toast ===== */
+.toast{
+  position:absolute;left:50%;bottom:110px;transform:translateX(-50%) translateY(8px);
+  background:var(--wine-a16);backdrop-filter:blur(6px);
+  border:1px solid var(--border-active);box-shadow:var(--card-glow);
+  padding:12px 20px;border-radius:999px;color:#fff;font-size:14px;
+  opacity:0;transition:opacity .3s, transform .3s;z-index:20;pointer-events:none;white-space:nowrap;
+}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
+.toast.toast-top{bottom:auto;top:145px;transform:translateX(-50%) translateY(-8px);}
+.toast.toast-top.show{transform:translateX(-50%) translateY(0);}
+</style>
+</head>
+<body>
+<div class="phone" id="phone">
+  <div class="glow"></div>
+
+  <!-- ===== Splash ===== -->
+  <div class="screen" id="screen-splash">
+    <div class="splash-content">
+      <svg class="splash-logo" width="180" height="63" viewBox="0 0 180 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16.5324 28.3647C20.6553 28.3647 25.3045 23.3155 26.4449 21.8096C26.8835 21.1896 27.3221 21.2781 27.3221 21.8096V36.6913C27.3221 37.2228 26.8835 37.3114 26.4449 36.6913C25.3045 35.1854 20.6553 30.1363 16.5324 30.1363H12.0586V60.254H23.6378C31.7082 60.254 38.6382 51.6616 40.6558 46.9668C40.9189 46.3467 41.6207 46.4353 41.533 46.9668L40.0417 62.0256H0.303876C-0.222453 62.0256 0.0407117 61.4941 0.303876 61.1398C1.88286 58.8367 3.28641 55.8249 3.28641 53.8761V8.16809C3.28641 6.2193 1.88286 3.20753 0.303876 0.904408C0.0407117 0.550087 -0.222453 0.0185946 0.303876 0.0185946H40.0417L41.533 15.0774C41.6207 15.6089 40.9189 15.6975 40.6558 15.0774C38.6382 10.3826 31.7082 1.79023 23.6378 1.79023H12.0586V28.3647H16.5324Z" fill="#FF95BA"/>
+        <path d="M91.2608 53.8761V41.3861C90.2081 49.6242 82.6641 63 65.6461 63C52.4879 63 44.2421 52.4588 44.2421 40.3232C44.2421 26.5044 53.8037 17.6463 67.7514 17.6463C77.7517 17.6463 84.4185 22.5183 84.4185 29.8705C84.4185 37.0456 79.4184 41.2975 70.9971 41.2975C59.5056 41.2975 60.2074 31.7308 64.6812 31.7308C68.7164 31.7308 69.0673 39.5259 72.0498 39.5259C74.3305 39.5259 75.6464 35.9827 75.6464 30.0477C75.6464 23.3155 72.313 19.4179 66.6988 19.4179C58.3652 19.4179 53.0142 26.3273 53.0142 37.3114C53.0142 47.5868 58.1021 58.128 69.3304 58.128C84.7694 58.128 91.2608 42.8034 91.2608 35.4512V15.9633C91.2608 10.6484 90.2959 6.2193 88.5414 4.71341C87.8397 4.09334 88.0151 3.38469 88.8923 3.38469C93.2784 3.29611 99.4189 1.08157 101.612 0.195761C102.84 -0.247146 103.366 0.0185946 102.489 1.4359C101.524 2.8532 100.033 4.80199 100.033 15.0774V32.8823C102.314 24.4671 106.788 17.6463 116.7 17.6463C125.56 17.6463 130.121 23.5813 130.121 33.7681V53.8761C130.121 55.8249 131.613 58.8367 133.104 61.1398C133.455 61.6713 133.63 62.0256 133.104 62.0256H118.367C117.84 62.0256 118.104 61.4941 118.367 61.1398C119.946 58.8367 121.349 55.8249 121.349 53.8761V31.9079C121.349 24.2013 118.542 19.4179 113.981 19.4179C104.244 19.4179 100.033 34.211 100.033 45.4609V53.8761C100.033 55.8249 101.524 58.8367 103.015 61.1398C103.366 61.6713 103.542 62.0256 103.015 62.0256H88.2783C87.7519 62.0256 88.0151 61.4941 88.2783 61.1398C89.8573 58.8367 91.2608 55.8249 91.2608 53.8761Z" fill="#FF95BA"/>
+        <path d="M133.42 39.7917C133.42 26.6816 143.508 16.6719 156.754 16.6719C169.912 16.6719 180 26.7702 180 39.7917C180 53.256 170.351 62.9114 156.754 62.9114C143.069 62.9114 133.42 53.3446 133.42 39.7917ZM142.631 39.7917C142.631 52.636 148.245 61.1398 156.754 61.1398C165.175 61.1398 170.789 52.636 170.789 39.7917C170.789 26.9474 165.175 18.4435 156.754 18.4435C148.245 18.4435 142.631 26.9474 142.631 39.7917Z" fill="#FF95BA"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- ===== Auth ===== -->
+  <div class="screen hidden" id="screen-auth">
+    <div class="header-row">
+      <button class="btn btn-icon lang-toggle" id="btn-lang-toggle-auth" aria-label="Мова" title="Мова">UA</button>
+    </div>
+    <div class="screen-content">
+      <div class="auth-header">
+        <div class="mascot-small" id="auth-mascot"></div>
+        <h1 class="voice" data-i18n="authTitle">Твоя історія починається тут ✨</h1>
+        <p data-i18n="authSubtitle">Увійди, щоб зберігати свої кола, відповіді та моменти, до яких захочеться повернутися.</p>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label" for="auth-email" data-i18n="authEmailLabel">Пошта</label>
+        <input class="field" type="email" id="auth-email" placeholder="you@example.com" autocomplete="email">
+        <span class="field-error" id="auth-email-error" data-i18n="authEmailError">Введи коректну пошту</span>
+      </div>
+
+      <button class="btn btn-primary btn-block" id="btn-auth-magic-link" data-i18n="authSendLink">Надіслати посилання</button>
+      <p id="auth-status-text"></p>
+
+      <div class="divider"></div>
+
+      <button class="btn btn-secondary btn-block" id="btn-auth-google" data-i18n="authGoogle">Продовжити з Google</button>
+    </div>
+  </div>
+
+  <!-- ===== Circles list ===== -->
+  <div class="screen hidden" id="screen-circles">
+    <div class="header-row">
+      <div class="header-titles"><h1 class="voice" data-i18n="appTitle">Мої діалоги</h1></div>
+      <button class="btn btn-icon lang-toggle" id="btn-lang-toggle-circles" aria-label="Мова" title="Мова">UA</button>
+      <button class="btn btn-icon" id="btn-sign-out" aria-label="Вийти" title="Вийти"><span class="icon" data-icon="logout"></span></button>
+    </div>
+    <div class="screen-content">
+      <div id="circles-list"></div>
+    </div>
+    <div class="mascot-hero" id="circles-mascot"></div>
+    <button class="btn btn-primary fab" id="btn-fab-create" aria-label="Створити діалог">
+      <span class="icon" data-icon="plus"></span>
+    </button>
+  </div>
+
+  <!-- ===== New circle ===== -->
+  <div class="screen hidden" id="screen-newcircle">
+    <div class="screen-content">
+      <div class="header-row">
+        <button class="btn btn-icon" id="btn-back-to-circles" aria-label="Назад">
+          <span class="icon" data-icon="arrowLeft"></span>
+        </button>
+        <div class="header-titles"></div>
+        <button class="btn btn-icon lang-toggle" id="btn-lang-toggle-newcircle" aria-label="Мова" title="Мова">UA</button>
+      </div>
+      <div class="new-circle-top">
+        <div class="new-circle-titles">
+          <h1 class="voice" data-i18n="newDialogTitle">Новий діалог</h1>
+          <p data-i18n="newDialogSubtitle">Створимо простір для цікавих розмов і нових відкриттів ✨</p>
+        </div>
+        <div class="mascot-small" id="newcircle-mascot"></div>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label" for="input-name" data-i18n="nameLabel">Ім’я</label>
+        <input class="field" type="text" id="input-name" placeholder="Наприклад, Артем" data-i18n-placeholder="namePlaceholder" maxlength="40" autocomplete="off">
+        <span class="field-error" id="name-error" data-i18n="nameError">Введи ім’я, щоб продовжити</span>
+      </div>
+
+      <div class="field-group">
+        <span class="field-label" data-i18n="categoryLabel">Що вас пов’язує?</span>
+        <div class="option-list" id="option-list">
+          <div class="option-card selected" data-category="new">
+            <div class="option-icon-tile"><span class="icon" data-icon="sparkle"></span></div>
+            <div class="option-body">
+              <div class="option-title" data-i18n="catNewTitle">Нове знайомство</div>
+              <div class="option-desc" data-i18n="catNewDesc">Легкі й безпечні питання, щоб краще пізнати одне одного</div>
+            </div>
+            <div class="radio"></div>
+          </div>
+          <div class="option-card" data-category="relationship">
+            <div class="option-icon-tile"><span class="icon" data-icon="heart"></span></div>
+            <div class="option-body">
+              <div class="option-title" data-i18n="catRelTitle">Стосунки</div>
+              <div class="option-desc" data-i18n="catRelDesc">Глибокі питання, щоб зміцнити зв’язок і дізнатися більше одне про одного</div>
+            </div>
+            <div class="radio"></div>
+          </div>
+          <div class="option-card" data-category="friendship">
+            <div class="option-icon-tile"><span class="icon" data-icon="chat"></span></div>
+            <div class="option-body">
+              <div class="option-title" data-i18n="catFriendTitle">Дружба</div>
+              <div class="option-desc" data-i18n="catFriendDesc">Щоб краще зрозуміти, підтримати і стати ближчими</div>
+            </div>
+            <div class="radio"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="newcircle-footer">
+      <button class="btn btn-primary btn-block" id="btn-create-circle" data-i18n="createDialog">Створити діалог</button>
+    </div>
+  </div>
+
+  <!-- ===== Draw cards ===== -->
+  <div class="screen hidden" id="screen-draw">
+    <div class="screen-content">
+      <div class="header-row">
+        <button class="btn btn-icon" id="btn-back-to-circles-2" aria-label="Назад">
+          <span class="icon" data-icon="arrowLeft"></span>
+        </button>
+        <div class="header-titles">
+          <h1 class="voice" id="draw-circle-name" style="font-size:28px;"></h1>
+          <span class="tag" id="draw-circle-tag"></span>
+        </div>
+        <button class="btn btn-icon mute-toggle" aria-label="Звук" title="Звук"><span class="icon" data-icon="soundOff"></span></button>
+        <button class="btn btn-icon" id="btn-draw-menu" aria-label="Меню діалогу" title="Меню діалогу"><span class="icon" data-icon="more"></span></button>
+      </div>
+
+      <div class="draw-progress">
+        <div class="draw-progress-labels">
+          <span data-i18n="questionsAsked">Питань пройдено</span>
+          <span id="draw-progress-label"></span>
+        </div>
+        <div class="progress-track"><div class="progress-fill" id="draw-progress-fill" style="width:0%"></div></div>
+      </div>
+
+      <div class="draw-card-wrap">
+        <div class="draw-card" id="draw-card">
+          <div class="draw-card-face draw-card-front">
+            <video id="draw-video" muted playsinline preload="auto"></video>
+            <p class="draw-card-tagline" id="draw-tagline">Що витягнеш сьогодні?</p>
+            <p class="draw-complete-subtitle" id="draw-complete-subtitle"></p>
+          </div>
+          <div class="draw-card-face draw-card-back">
+            <button class="card-edit-btn" id="btn-edit-note" aria-label="Залишити нотатку" title="Залишити нотатку">
+              <span class="icon" data-icon="edit"></span>
+            </button>
+            <p class="draw-question-text" id="draw-question-text"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="draw-footer">
+      <p class="draw-helper-text" id="draw-helper-text" data-i18n="tapToFlip">Клікни на картку, щоб перегорнути</p>
+      <div class="draw-actions" id="draw-actions">
+        <button class="btn btn-secondary" id="btn-skip" data-i18n="skip">Пропустити</button>
+        <button class="btn btn-primary" id="btn-answered" data-i18n="answered">Запитано</button>
+      </div>
+      <button class="btn btn-secondary btn-block" id="btn-view-notes-complete" data-i18n="viewNotes" style="display:none;">Переглянути нотатки</button>
+    </div>
+  </div>
+
+  <!-- ===== Notes history ===== -->
+  <div class="screen hidden" id="screen-notes">
+    <div class="screen-content">
+      <div class="header-row">
+        <button class="btn btn-icon" id="btn-back-to-draw" aria-label="Назад">
+          <span class="icon" data-icon="arrowLeft"></span>
+        </button>
+        <div class="header-titles">
+          <h1 class="voice" id="notes-circle-name" style="font-size:28px;"></h1>
+          <p class="notes-subtitle" data-i18n="notesScreenSubtitle">Історія цього кола</p>
+        </div>
+      </div>
+      <div class="notes-list" id="notes-list"></div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="note-modal">
+    <div class="note-sheet">
+      <button class="note-close-btn" id="btn-note-close" aria-label="Закрити" title="Закрити">
+        <span class="icon" data-icon="close"></span>
+      </button>
+      <div class="note-sheet-header">
+        <h3 data-i18n="noteTitle">Залиш нотатку</h3>
+        <p class="note-sub" data-i18n="noteSub">Що запам’яталось із цієї відповіді? Необов’язково ✨</p>
+      </div>
+      <div class="note-body">
+        <textarea class="note-textarea" id="note-text" placeholder="Наприклад: сказав(ла), що мріє про подорож у Карпати…" data-i18n-placeholder="notePlaceholder"></textarea>
+        <button class="btn btn-primary btn-block" id="btn-note-save" data-i18n="noteSave">Зберігти</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="draw-menu-modal">
+    <div class="note-sheet">
+      <button class="note-close-btn" id="btn-menu-close" aria-label="Закрити" title="Закрити">
+        <span class="icon" data-icon="close"></span>
+      </button>
+      <h3 data-i18n="dialogMenuTitle">Діалог</h3>
+      <div class="menu-list">
+        <button class="menu-item" id="btn-menu-notes">
+          <span class="icon" data-icon="notes"></span>
+          <span data-i18n="menuNotes">Мої нотатки</span>
+        </button>
+        <button class="menu-item" id="btn-menu-lang">
+          <span class="icon" data-icon="language"></span>
+          <span data-i18n="menuLang">Змінити мову на English</span>
+        </button>
+        <button class="menu-item" id="btn-menu-delete">
+          <span class="icon" data-icon="trash"></span>
+          <span data-i18n="menuDelete">Видалити діалог</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="delete-modal">
+    <div class="note-sheet">
+      <button class="note-close-btn" id="btn-delete-close" aria-label="Закрити" title="Закрити">
+        <span class="icon" data-icon="close"></span>
+      </button>
+      <div class="note-sheet-header">
+        <h3 data-i18n="deleteTitle">Видалити діалог?</h3>
+        <p class="note-sub" id="delete-sub-text"></p>
+      </div>
+      <div class="note-actions">
+        <button class="btn btn-secondary" id="btn-delete-cancel" data-i18n="deleteCancel">Скасувати</button>
+        <button class="btn btn-primary" id="btn-delete-confirm" data-i18n="deleteConfirm">Видалити</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+</div>
+<script>const QUESTIONS=[{i:1,s:"g",uk:"Яку найбільшу дурницю ти зробив/ла в житті?",en:"What's the biggest foolish thing you've ever done in your life?"},{i:2,s:"g",uk:"Чого ти боїшся найбільше?",en:"What are you most afraid of?"},{i:3,s:"g",uk:"Що завдало тобі найбільший біль? Як ти з цим впорався/лася?",en:"What has caused you the greatest pain? How did you cope with it?"},{i:4,s:"g",uk:"Чи потрібно тобі бути наодинці з собою? Як часто?",en:"Do you need time alone with yourself? How often?"},{i:5,s:"g",uk:"Як ти відчуваєш, що тебе люблять, що про тебе піклуються? Через які дії?",en:"How do you feel loved and cared for? Through what actions?"},{i:6,s:"g",uk:"Ти ревнива людина? Чи вважаєш ти, що ревнощі є ознакою недовіри?",en:"Are you a jealous person? Do you think jealousy is a sign of distrust?"},{i:7,s:"g",uk:"Як ти ставишся до того, щоб ділитися особистим життям в соцмережах?",en:"How do you feel about sharing your personal life on social media?"},{i:8,s:"g",uk:"Чи є щось таке, чого ти і досі не можеш собі дозволити, хоча маєш таку нагоду?",en:"Is there something you still can't allow yourself, even though you have the chance?"},{i:9,s:"g",uk:"Що у стосунках твоїх батьків тобі подобається і хотілося б запозичити, а що не подобається?",en:"What do you like about your parents' relationship that you'd want to borrow, and what don't you like?"},{i:10,s:"g",uk:"Чи важливо тобі знати про мій досвід минулих стосунків?",en:"Is it important for you to know about my past relationship experience?"},{i:11,s:"g",uk:"Чи правда, що найміцніші стосунки виростають з дружби?",en:"Is it true that the strongest relationships grow out of friendship?"},{i:12,s:"r",uk:"Які риси характеру ти найбільше цінуєш у мені?",en:"Which character traits do you value most in me?"},{i:13,s:"r",uk:"Яку звичку ти в мене перейняв/ла? А яку ще б хотів/ла?",en:"Which habit did you pick up from me? Which other one would you like to?"},{i:14,s:"r",uk:"Яким словом ти б описав/ла мене в день нашого знайомства і яке слово найкраще описує мене зараз?",en:"What word would describe me on the day we met, and what word best describes me now?"},{i:15,s:"r",uk:"Чи є в нас, як у пари, погана звичка? Ти б хотів/ла її позбутися?",en:"Do we have a bad habit as a couple? Would you like to get rid of it?"},{i:16,s:"r",uk:"Яка відмінність між нами тобі подобається найбільше?",en:"Which difference between us do you like the most?"},{i:17,s:"r",uk:"За що ти мене покохав/ла?",en:"What made you fall in love with me?"},{i:18,s:"r",uk:"Коли ми лише познайомилися, кому найпершому ти розповів про це? Чому?",en:"When we first met, who was the first person you told about it? Why?"},{i:19,s:"r",uk:"Яка частина мого тіла тобі найбільше подобається?",en:"Which part of my body do you like the most?"},{i:20,s:"r",uk:"На які теми тобі складно говорити зі мною?",en:"What topics is it hard for you to talk to me about?"},{i:21,s:"r",uk:"Що ти можеш зробити зараз у наших стосунках, чого не міг/могла зробити на їхньому початку?",en:"What can you do now in our relationship that you couldn't do at the start?"},{i:22,s:"r",uk:"Яка риса характеру тобі найбільше подобається в мені? А яка відштовхує?",en:"Which character trait do you like most in me? Which one pushes you away?"},{i:23,s:"r",uk:"Яку б пораду ти дав/ла нам на початку стосунків?",en:"What advice would you give us at the start of our relationship?"},{i:24,s:"g",uk:"Витрачати, відкладати, економити: вибери своє ставлення до грошей та обґрунтуй вибір.",en:"Spend, save, or invest: choose your attitude toward money and explain your choice."},{i:25,s:"g",uk:"Який життєвий урок ти б хотів/ла отримати раніше?",en:"What life lesson would you have liked to learn earlier?"},{i:26,s:"g",uk:"Що вибереш: спільна ковдра чи дві різні?",en:"Which would you choose: one shared blanket or two separate ones?"},{i:27,s:"r",uk:"Як ти ставишся до моїх батьків?",en:"How do you feel about my parents?"},{i:28,s:"g",uk:"Що романтично саме для тебе: назви щонайменше 5 проявів романтики.",en:"What's romantic to you specifically: name at least 5 expressions of romance."},{i:29,s:"g",uk:"Що для тебе неприйнятно в стосунках?",en:"What's unacceptable to you in a relationship?"},{i:30,s:"r",uk:"Яка риса характеру є в мені, але рідко зустрічається в інших людях?",en:"What character trait do I have that's rare in other people?"},{i:31,s:"g",uk:"Чи віриш ти, що люди можуть бути створені одне для одного чи все у світі більш прагматично?",en:"Do you believe people can be made for each other, or is everything more pragmatic?"},{i:32,s:"g",uk:"Що вибереш: спати в піжамах або голяка?",en:"Which would you choose: sleeping in pajamas or naked?"},{i:33,s:"g",uk:"Через скільки часу в стосунках варто робити пропозицію?",en:"How long into a relationship should someone propose?"},{i:34,s:"r",uk:"Чи є щось, щоб ти хотів/ла прожити саме зі мною?",en:"Is there something you'd want to experience specifically with me?"},{i:35,s:"g",uk:"Як тобі здається, ти можеш відчувати настрій інших людей?",en:"Do you feel like you can sense other people's moods?"},{i:36,s:"g",uk:"Які критерії міцних стосунків ти виокремлюєш для себе?",en:"What criteria define a strong relationship for you?"},{i:37,s:"g",uk:"Тобі подобається людина, якою ти є зараз?",en:"Do you like the person you are right now?"},{i:38,s:"g",uk:"Продовж речення: «Я б хотів/ла отримувати від тебе вітання на такі свята…». Чому тобі це важливо?",en:"Finish the sentence: \"I'd like to get greetings from you on these holidays…\" Why does this matter to you?"},{i:39,s:"r",uk:"Назви 3 речі, у чому ми максимально схожі!",en:"Name 3 things we're most alike in!"},{i:40,s:"g",uk:"Що для тебе дім?",en:"What does 'home' mean to you?"},{i:41,s:"g",uk:"Чого тобі бракує в житті зараз? Чи можу я це виправити?",en:"What's missing in your life right now? Can I fix that?"},{i:42,s:"g",uk:"Чи варто робити подарунки без причини? Чому?",en:"Should gifts be given without a reason? Why?"},{i:43,s:"r",uk:"Над чим у наших стосунках ми маємо працювати більше?",en:"What should we work on more in our relationship?"},{i:44,s:"r",uk:"Що б ти хотів/ла, щоб я сприймав/ла простіше?",en:"What would you like me to take more lightly?"},{i:45,s:"g",uk:"Уяви, що ти маєш можливість змінити одну подію минулого у твоєму житті — що б це була за подія? Як би ти її змінив/ла?",en:"Imagine you could change one event from your past — what would it be, and how would you change it?"},{i:46,s:"r",uk:"Пам'ятаєш наше перше побачення? А пам'ятаєш, що розповідав/ла друзям після нього?",en:"Do you remember our first date? Do you remember what you told your friends about it afterward?"},{i:47,s:"g",uk:"Чи можна залишитися друзями після закінчення стосунків?",en:"Can people stay friends after a relationship ends?"},{i:48,s:"g",uk:"Чи вважаєш ти, що статеве виховання у підлітковому віці — це важливо? У тебе воно було?",en:"Do you think sex education in the teenage years is important? Did you have it?"},{i:49,s:"g",uk:"Що для тебе здорові стосунки? У нас такі?",en:"What does a healthy relationship mean to you? Do we have one?"},{i:50,s:"r",uk:"Щоб ти хотів/ла, щоб я ніколи не забував/ла?",en:"What do you want me to never forget?"},{i:51,s:"g",uk:"Які риси в собі ти любиш, а які риси ти б хотів/ла змінити?",en:"What traits in yourself do you love, and which would you like to change?"},{i:52,s:"g",uk:"Як мені реагувати на твою злість?",en:"How should I react to your anger?"},{i:53,s:"g",uk:"Які твої переконання та стереотипи заважають тобі найбільше?",en:"Which of your beliefs and stereotypes get in your way the most?"},{i:54,s:"g",uk:"Що для тебе аб'юзивні стосунки?",en:"What does an abusive relationship mean to you?"},{i:55,s:"g",uk:"Яка риса характеру в інших людях тебе відштовхує?",en:"What character trait in other people pushes you away?"},{i:56,s:"g",uk:"Чи є людина, яку б ти ніколи не хотів/ла бачити у своєму житті? Чому?",en:"Is there a person you never want to see in your life again? Why?"},{i:57,s:"g",uk:"Чого ти не зробиш ні за які гроші?",en:"What would you never do for any amount of money?"},{i:58,s:"g",uk:"Якщо ти спонтанно приймеш рішення сісти на дієту, зайнятися спортом, відмовитися від алкоголю і т. д., яку поведінку від мене ти очікуєш?",en:"If you suddenly decided to diet, start exercising, quit drinking, etc., what behavior would you expect from me?"},{i:59,s:"g",uk:"Розкажи про твоє найулюбленіше місце у місті/селищі, де ми зараз перебуваємо.",en:"Tell me about your favorite place in the city/town where we currently are."},{i:60,s:"g",uk:"Що робить тебе щасливим/ою? Назви мінімум 5 речей!",en:"What makes you happy? Name at least 5 things!"},{i:61,s:"g",uk:"Що б ти хотів/ла змінити у своєму житті?",en:"What would you like to change about your life?"},{i:62,s:"r",uk:"Якими рутинними справами ти б хотів/ла, щоб ми займалися вдвох? А якими хобі?",en:"Which everyday tasks would you like us to do together? Which hobbies?"},{i:63,s:"g",uk:"Ти приховуєш іноді свої емоції? Чому?",en:"Do you sometimes hide your emotions? Why?"},{i:64,s:"g",uk:"Чи є відчуття, за яким ти сумуєш зараз найбільше?",en:"Is there a feeling you miss the most right now?"},{i:65,s:"g",uk:"Як поділити домашні обов'язки? Опиши свою ідеальну формулу.",en:"How should household duties be split? Describe your ideal formula."},{i:66,s:"g",uk:"Що для тебе «час разом»?",en:"What does 'time together' mean to you?"},{i:67,s:"g",uk:"Які твої особисті потреби та бажання в стосунках, про які я маю знати?",en:"What personal needs and desires in the relationship should I know about?"},{i:68,s:"g",uk:"Чи є в тебе якісь психологічні захисти в стресових ситуаціях? Як мені варто/не варто поводитись у таких випадках?",en:"Do you have any psychological defenses in stressful situations? How should or shouldn't I act in those cases?"},{i:69,s:"g",uk:"Закордоном тато в декреті — це звичайна справа. Як гадаєш, чи можливо це в нашій парі?",en:"Abroad, a stay-at-home dad on parental leave is common. Do you think that could work for us as a couple?"},{i:70,s:"g",uk:"Яким ти бачиш сімейний бюджет та його розподіл? Розкажи про ідеальну фінансову модель у стосунках.",en:"How do you picture the family budget and its distribution? Describe an ideal financial model for a relationship."},{i:71,s:"g",uk:"Що для тебе є зрадою?",en:"What counts as betrayal to you?"},{i:72,s:"g",uk:"Як зрозуміти, що ти закоханий/а?",en:"How do you know you're in love?"},{i:73,s:"r",uk:"Тобі комфортно говорити зі мною про інтимні речі?",en:"Are you comfortable talking to me about intimate things?"},{i:74,s:"r",uk:"Коли ти зрозумів/ла, що закохався/лась у мене?",en:"When did you realize you'd fallen in love with me?"},{i:75,s:"r",uk:"В які моменти я виглядаю мило у твоїх очах?",en:"In what moments do I look cute to you?"},{i:76,s:"g",uk:"Назви 5 причин, чому ти пишаєшся собою.",en:"Name 5 reasons you're proud of yourself."},{i:77,s:"g",uk:"Назви дрібницю, яку я можу робити щодня, щоб тішити тебе.",en:"Name a small thing I can do every day to make you happy."},{i:78,s:"r",uk:"Які мої звички тобі не подобаються?",en:"Which of my habits do you dislike?"},{i:79,s:"g",uk:"Уяви: тобі подарували 10000$, які ти можеш витратити лише на нашу пару. Що купиш?",en:"Imagine you were given $10,000 that you could only spend on us as a couple. What would you buy?"},{i:80,s:"r",uk:"Хто перший освідчився? Згадай, як це було!",en:"Who proposed first? Tell me how it happened!"},{i:81,s:"g",uk:"Які родинні традиції хотілося б перенести у нашу пару? Які нові створити?",en:"Which family traditions would you like to bring into our relationship? Which new ones would you like to create?"},{i:82,s:"r",uk:"Якщо я втрачу пам'ять, то який найперший факт/історію ти розкажеш мені про мене? А про нас?",en:"If I lost my memory, what's the first fact or story you'd tell me about myself? And about us?"},{i:83,s:"r",uk:"Які слова тебе дуже ранили, але ти зробив/ла вигляд, що все ок? Чому?",en:"What words hurt you deeply, but you pretended everything was fine? Why?"},{i:84,s:"r",uk:"Який наш спільний спогад ти б хотів/ла пережити ще раз?",en:"Which shared memory of ours would you like to relive?"},{i:85,s:"g",uk:"Що з того, чим ти зараз займаєшся (хобі/робота), ти б хотів/ла робити і через 5 років?",en:"Of what you're currently doing (hobby/work), what would you still like to be doing in 5 years?"},{i:86,s:"r",uk:"Чи легко було б нам працювати разом над спільною справою? Якщо вже маємо такий досвід, то поділися 2 позитивними та 2 негативними речами.",en:"Would it be easy for us to work together on something? If we already have that experience, share 2 positive and 2 negative things about it."},{i:87,s:"g",uk:"Якщо кохання живе 3 роки, то що потім? Куди воно дівається?",en:"If love only lasts 3 years, what happens after that? Where does it go?"},{i:88,s:"g",uk:"Як ти ставишся до прояву почуттів на публіці: гарячі поцілунки в метро, пристрасні обійми на лавці в парку, гучні з'ясування стосунків у закладі?",en:"How do you feel about public displays of affection: passionate kisses on the subway, hugging on a park bench, loud arguments in public?"},{i:89,s:"r",uk:"В які моменти ти пишаєшся мною?",en:"In what moments are you proud of me?"},{i:90,s:"r",uk:"Продовж речення: «Ми найчастіше сваримося через те, що…». Назви 3 найчастіші причини сварок і 3 рішення, які допоможуть їх уникати.",en:"Finish the sentence: \"We argue most often because…\" Name 3 common reasons for our arguments and 3 solutions to help avoid them."},{i:91,s:"r",uk:"Продовж речення: «Я ніколи не забуду, як ми…».",en:"Finish the sentence: \"I'll never forget how we…\""},{i:92,s:"g",uk:"Чи хотів/ла би ти спільну фотосесію? В якому стилі?",en:"Would you like to do a couple's photoshoot together? In what style?"},{i:93,s:"r",uk:"Перевірка на уважність: назви мою улюблену страву.",en:"Attention check: name my favorite dish."},{i:94,s:"g",uk:"Партнерські пологи: назви свої «за» та «проти». Ти б хотів/ла мати такі в нашій парі? Чому?",en:"Partner-present childbirth: name your pros and cons. Would you want that for us? Why?"},{i:95,s:"g",uk:"Чи потрібно змінюватися в стосунках?",en:"Do people need to change in a relationship?"},{i:96,s:"r",uk:"У чому сила наших стосунків?",en:"What is the strength of our relationship?"},{i:97,s:"r",uk:"Назви 3 лагідних прізвиська, якими я тебе називаю і вони тобі подобаються. Чи є ті, які не подобаються?",en:"Name 3 affectionate nicknames I call you that you like. Are there any you don't like?"},{i:98,s:"r",uk:"Назви 3 речі, які змінилися в тобі за час наших стосунків.",en:"Name 3 things that have changed in you since we've been together."},{i:99,s:"r",uk:"Назви свої найулюбленіші види нашого спільного дозвілля.",en:"Name your favorite ways we spend leisure time together."},{i:100,s:"r",uk:"Що ти досі не можеш зрозуміти в мені?",en:"What can't you still understand about me?"},{i:101,s:"r",uk:"Якби тобі сказали, що ти схожий/а на мене — тобі було б приємно?",en:"If someone told you that you resemble me, would that please you?"},{i:102,s:"r",uk:"Хто витрачає більше грошей у нашій парі?",en:"Who spends more money in our relationship?"},{i:103,s:"r",uk:"Чи є щось, що ти дуже хотів/ла б, але ніколи мене про це не просив/ла?",en:"Is there something you really want but never asked me for?"},{i:104,s:"g",uk:"Про що ти подумав/ла, коли ми вперше побачилися?",en:"What did you think when we first saw each other?"},{i:105,s:"r",uk:"Чи є речі/ситуації, які тебе турбують, але я про це не знаю?",en:"Are there things or situations bothering you that I don't know about?"},{i:106,s:"r",uk:"Які наші спільні спогади ти згадуєш зі сміхом?",en:"Which shared memories of ours make you laugh when you think of them?"},{i:107,s:"r",uk:"Хто перший поцілував? Пам'ятаєш твої думки в цей момент?",en:"Who kissed first? Do you remember your thoughts at that moment?"},{i:108,s:"r",uk:"Як ти ставишся до моїх друзів? Поясни, чому так?",en:"How do you feel about my friends? Explain why."},{i:109,s:"g",uk:"Які речі зі свого дитинства ти б хотів/ла покращити для своєї дитини в майбутньому?",en:"What things from your own childhood would you like to improve for your future child?"},{i:110,s:"g",uk:"Якби у тебе була можливість дізнатися відповідь на одне запитання про минуле або майбутнє — що б ти запитав/ла?",en:"If you could learn the answer to one question about the past or future, what would you ask?"},{i:111,s:"r",uk:"Коли мене немає поряд, що тобі нагадує про мене?",en:"When I'm not around, what reminds you of me?"},{i:112,s:"g",uk:"Що насамперед ти помічаєш в інших людях? Чому саме так? Що ти спершу помітив/ла в мені?",en:"What do you notice about people first, and why? What did you first notice about me?"},{i:113,s:"r",uk:"Чого тобі бракує в наших стосунках?",en:"What do you feel is missing in our relationship?"},{i:114,s:"g",uk:"Що вибереш: масштабне велике весілля чи маленьке сімейне свято?",en:"Which would you choose: a big lavish wedding or a small family celebration?"},{i:115,s:"g",uk:"Як ти реагуєш на власні невдачі та поразки?",en:"How do you react to your own failures and setbacks?"},{i:116,s:"g",uk:"Поділися своєю найкращою і найдурнішою мрією!",en:"Share your best and silliest dream!"},{i:117,s:"g",uk:"Які прояви уваги в стосунках ти вважаєш важливими?",en:"Which expressions of attention do you consider important in a relationship?"},{i:118,s:"r",uk:"Якою ти бачиш нашу старість? Опиши один звичайний день зі старості.",en:"How do you picture us in old age? Describe an ordinary day of that life."},{i:119,s:"r",uk:"Якби ти написав/ла книгу про наші стосунки, то як би вона називалася?",en:"If you wrote a book about our relationship, what would it be called?"},{i:120,s:"r",uk:"В який момент ти зрозумів/ла, що можеш розповісти мені абсолютно все? Чи такий момент ще не настав?",en:"When did you realize you could tell me absolutely everything? Or has that moment not come yet?"},{i:121,s:"g",uk:"Що б сказала твоя маленька версія, коли б побачила тебе зараз?",en:"What would your younger self say if they saw you now?"},{i:122,s:"g",uk:"Чи є в тебе така річ, яка має лише для тебе особливе значення?",en:"Is there something that has special meaning only to you?"},{i:123,s:"g",uk:"Яку поведінку своїх батьків у дитинстві ти б не хотів/ла повторювати з власними дітьми?",en:"What behavior of your parents from your childhood would you not want to repeat with your own children?"},{i:124,s:"g",uk:"Чи можна почуватися вільно, коли є стосунки? Тобі вистачає свободи?",en:"Can you feel free while in a relationship? Do you have enough freedom?"},{i:125,s:"g",uk:"Чи потрібно завжди бути відвертим у стосунках або ж є речі, які краще залишити у своїй голові?",en:"Do you always need to be fully open in a relationship, or are there things better kept to yourself?"},{i:126,s:"g",uk:"Одруження — це важливо? Що ти вкладаєш у це поняття? Яким ти бачиш наш шлюб у майбутньому?",en:"Is marriage important? What does it mean to you? How do you picture our marriage in the future?"},{i:127,s:"g",uk:"Що вибереш: сніданок у ліжко чи готувати його разом на кухні?",en:"Which would you choose: breakfast in bed or cooking it together in the kitchen?"},{i:128,s:"g",uk:"Перевіряти телефони та листування одне одного — це порушення особистих кордонів чи норма? Поясни свій вибір.",en:"Checking each other's phones and messages — is that a boundary violation or normal? Explain your choice."},{i:129,s:"g",uk:"Уяви, що я беру в тебе інтерв'ю. Якою буде твоя відповідь на запитання: «Що допомогло тобі стати таким/ою, яким/ою ти зараз є?»",en:"Imagine I'm interviewing you. What's your answer to: \"What helped you become who you are today?\""},{i:130,s:"g",uk:"Чи віриш ти в сумісність людей за знаком зодіаку? Якщо так, то як реагувати, коли гороскоп каже, що нам разом не судилося?",en:"Do you believe in zodiac compatibility? If so, how would you react if a horoscope said we're not meant to be together?"},{i:131,s:"g",uk:"Як ти ставишся до шлюбного договору?",en:"How do you feel about prenuptial agreements?"},{i:132,s:"r",uk:"Чого б найпершого ти навчив/ла нашу дитину?",en:"What's the first thing you'd teach our child?"},{i:133,s:"r",uk:"Які компліменти ти хочеш чути частіше?",en:"What compliments do you want to hear more often?"},{i:134,s:"g",uk:"Тобі подобається спільний шопінг чи це дратує? :)",en:"Do you enjoy shopping together, or does it annoy you? :)"},{i:135,s:"r",uk:"Чи є в тебе страхи з минулих стосунків, які проявляються в наших?",en:"Do you have fears from past relationships that show up in ours?"},{i:136,s:"g",uk:"Коли ти відчуваєш себе в безпеці?",en:"When do you feel safe?"},{i:137,s:"g",uk:"Що руйнує кохання? Назви 3 найчастіші причини розриву стосунків, на твій погляд.",en:"What destroys love? Name 3 of the most common reasons relationships end, in your opinion."},{i:138,s:"g",uk:"Ти віддаєш перевагу нікому не розповідати про свої плани, думки та переживання чи навпаки ділитися про це зі всім світом?",en:"Do you prefer keeping your plans, thoughts, and feelings to yourself, or sharing them with everyone?"},{i:139,s:"g",uk:"Про що найбільше шкодуєш?",en:"What do you regret the most?"},{i:140,s:"g",uk:"Що б ти змінив/ла у своєму вихованні?",en:"What would you change about how you were raised?"},{i:141,s:"g",uk:"Уяви, що тобі потрібно дати інструкцію щодо того, як тебе любити, але там усього 5 пунктів. Назви їх.",en:"Imagine you had to give instructions on how to love you, but only 5 points. Name them."},{i:142,s:"g",uk:"Якщо в стосунках криза, ти готовий/а разом йти до психолога чи будеш вирішувати все самотужки?",en:"If there's a crisis in the relationship, are you willing to see a therapist together, or would you handle it alone?"},{i:143,s:"g",uk:"Як ти відреагуєш, якщо твоя дитина зізнається в гомосексуальності?",en:"How would you react if your child came out as gay?"},{i:144,s:"g",uk:"Є 5 мов кохання: слова заохочення, час, подарунки, допомога та дотики. Яка з них про тебе?",en:"There are 5 love languages: words of affirmation, quality time, gifts, acts of service, and touch. Which one is you?"},{i:145,s:"g",uk:"Якщо весь наступний рік ми могли б разом не працювати й займатися чимось для насолоди, що б це було?",en:"If we could spend the whole next year not working and just enjoying ourselves, what would that be?"},{i:146,s:"g",uk:"Які в тебе стосунки зі своїми батьками?",en:"What's your relationship like with your parents?"},{i:147,s:"g",uk:"Що таке іскра в стосунках? У нас вона є? Що робити, коли вона гасне?",en:"What is 'the spark' in a relationship? Do we have it? What do we do if it fades?"},{i:148,s:"g",uk:"Якщо тобі сумно, тебе треба: веселити, вислухати чи дати спокій?",en:"If you're feeling sad, do you need to be cheered up, listened to, or left alone?"},{i:149,s:"g",uk:"Як ти вважаєш, давати поради людям про стосунки — це хороша ідея? Чому?",en:"Do you think giving relationship advice to people is a good idea? Why?"},{i:150,s:"r",uk:"Чи є у тебе щось (пісня, страва, аромат), що асоціюється зі мною?",en:"Is there something (a song, dish, scent) that reminds you of me?"},{i:151,s:"f",uk:"Яка моя риса тобі подобається найбільше, але ти рідко мені про це кажеш?",en:"Which of my traits do you like the most, but rarely tell me about?"},{i:152,s:"f",uk:"Який наш спільний момент ти згадуєш найчастіше?",en:"Which shared moment of ours do you think about the most?"},{i:153,s:"f",uk:"У який момент ти зрозумів(ла), що ми справді стали друзями?",en:"At what point did you realize we had really become friends?"},{i:154,s:"f",uk:"Що ти думаєш про мене такого, чого, як тобі здається, я про себе не знаю?",en:"What do you think about me that you believe I don't know about myself?"},{i:155,s:"f",uk:"Якби ми познайомилися тільки зараз, думаєш, ми б подружилися?",en:"If we met only now, do you think we would become friends?"},{i:156,s:"f",uk:"За що ти міг(могла) б на мене образитися, але, можливо, ніколи прямо не сказав(ла) б про це?",en:"What might you get hurt by from me, but maybe would never say directly?"},{i:157,s:"f",uk:"Яка моя дивна звичка викликає в тебе найбільшу усмішку?",en:"Which weird habit of mine makes you smile the most?"},{i:158,s:"f",uk:"Якби нашій дружбі потрібно було дати назву, якою б вона була?",en:"If our friendship needed a name, what would it be?"},{i:159,s:"f",uk:"У якій ситуації ти знаєш, що можеш на мене розраховувати?",en:"In what situation do you know you can count on me?"},{i:160,s:"f",uk:"Що б ти хотів(ла), щоб у нашій дружбі було частіше?",en:"What would you like there to be more of in our friendship?"},{i:161,s:"f",uk:"Якби ми могли повторити один день із нашого минулого, який би ти обрав(ла)?",en:"If we could relive one day from our past, which one would you choose?"},{i:162,s:"f",uk:"Яку мою версію ти пам’ятаєш найяскравіше?",en:"Which version of me do you remember most vividly?"},{i:163,s:"f",uk:"Чи змінив(ла) я тебе чимось, навіть зовсім трохи?",en:"Have I changed you in any way, even just a little?"},{i:164,s:"f",uk:"У чому ми абсолютно різні, але саме тому добре доповнюємо одне одного?",en:"In what way are we completely different, but that's exactly why we complement each other well?"},{i:165,s:"f",uk:"Якби наше знайомство було фільмом, який це був би жанр?",en:"If our friendship were a movie, what genre would it be?"},{i:166,s:"f",uk:"Яку пригоду ти обов’язково хотів(ла) б пережити разом зі мною?",en:"What adventure would you definitely want to experience together with me?"},{i:167,s:"f",uk:"Коли востаннє ти відчував(ла), що тебе справді розуміють?",en:"When did you last feel truly understood?"},{i:168,s:"f",uk:"Що зараз відбувається у твоєму житті такого, про що тобі хотілося б поговорити більше?",en:"What's happening in your life right now that you'd like to talk about more?"},{i:169,s:"f",uk:"Яку пораду ти дав(ла) б собі п’ять років тому?",en:"What advice would you give yourself five years ago?"},{i:170,s:"f",uk:"Як ти думаєш, якою буде наша дружба через десять років?",en:"What do you think our friendship will be like in ten years?"}];
+</script>
+<script>(function(){
+'use strict';
+
+/* ===== App state. Circles/answers are persisted in Supabase (see loadCirclesFromServer);
+   no localStorage/sessionStorage is used client-side. ===== */
+var Echo = {
+  screen: 'splash',
+  circles: [],
+  current: null,
+  currentQuestion: null,
+  selectedCategory: 'new',
+  lang: 'uk',
+  muted: true,
+  session: null
+};
+
+/* ===== Supabase ===== */
+var SUPABASE_URL = 'https://nyierjjrgbrnvccymjhl.supabase.co';
+var SUPABASE_ANON_KEY = 'sb_publishable_tKzzyd5Gn2iQMh_7c3V1Yw_i8EQh8iK';
+var supabase = null;
+var supabaseReadyPromise = null;
+
+function loadSupabase(){
+  if (!supabaseReadyPromise){
+    supabaseReadyPromise = import('https://esm.sh/@supabase/supabase-js@2').then(function(mod){
+      supabase = mod.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+      supabase.auth.onAuthStateChange(function(event, session){
+        onAuthStateChanged(session);
+      });
+      return supabase;
+    }).catch(function(err){
+      console.error('Failed to load Supabase client', err);
+    });
+  }
+  return supabaseReadyPromise;
+}
+
+/* ===== Auth ===== */
+var splashTimerDone = false;
+var authResolved = false;
+
+function isValidEmail(v){
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+}
+
+function sendMagicLink(){
+  var email = els.authEmail.value.trim();
+  els.authEmailError.classList.remove('show');
+  els.authEmail.style.borderColor = '';
+  if (!isValidEmail(email)){
+    els.authEmailError.classList.add('show');
+    els.authEmail.style.borderColor = 'var(--border-active)';
+    els.authEmail.focus();
+    return;
+  }
+  els.authStatusText.textContent = STRINGS.authSending[Echo.lang];
+  loadSupabase().then(function(client){
+    return client.auth.signInWithOtp({ email: email, options: { emailRedirectTo: window.location.href } });
+  }).then(function(res){
+    if (res.error){
+      els.authStatusText.textContent = STRINGS.authError[Echo.lang];
+      console.error('signInWithOtp failed', res.error);
+      return;
+    }
+    els.authStatusText.textContent = STRINGS.authLinkSent[Echo.lang];
+  });
+}
+
+function signInWithGoogle(){
+  loadSupabase().then(function(client){
+    return client.auth.signInWithOAuth({ provider: 'google', options: { redirectTo: window.location.href } });
+  });
+}
+
+function signOut(){
+  if (!supabase) return;
+  supabase.auth.signOut();
+}
+
+function hydrateCircle(row, answers){
+  var askedIds = [];
+  var notes = {};
+  var seen = {};
+  answers.forEach(function(a){
+    var qid = a.question_id;
+    if (!seen[qid]){ seen[qid] = true; askedIds.push(qid); }
+    if (a.note != null) notes[String(qid)] = a.note;
+    else delete notes[String(qid)];
+  });
+  var c = {
+    id: row.id,
+    name: row.name,
+    category: row.category,
+    askedIds: askedIds,
+    notes: notes,
+    growthLevel: 1,
+    flipped: false
+  };
+  c.growthLevel = growthStage(c);
+  return c;
+}
+
+function loadCirclesFromServer(){
+  if (!supabase || !Echo.session) return Promise.resolve();
+  var userId = Echo.session.user.id;
+  return Promise.all([
+    supabase.from('circles').select('*').eq('user_id', userId).order('created_at'),
+    supabase.from('answers').select('*').eq('user_id', userId).order('created_at')
+  ]).then(function(results){
+    var circlesRes = results[0];
+    var answersRes = results[1];
+    if (circlesRes.error){
+      console.error('load circles failed', circlesRes.error);
+      Echo.circles = [];
+      return;
+    }
+    var answersByCircle = {};
+    if (answersRes.error){
+      console.error('load answers failed', answersRes.error);
+    } else {
+      (answersRes.data || []).forEach(function(a){
+        if (!answersByCircle[a.circle_id]) answersByCircle[a.circle_id] = [];
+        answersByCircle[a.circle_id].push(a);
+      });
+    }
+    Echo.circles = (circlesRes.data || []).map(function(row){
+      return hydrateCircle(row, answersByCircle[row.id] || []);
+    });
+  });
+}
+
+function insertAnswer(c, questionId, note){
+  if (!supabase || !Echo.session) return;
+  supabase.from('answers').insert({
+    user_id: Echo.session.user.id,
+    circle_id: c.id,
+    question_id: questionId,
+    note: note || null
+  }).then(function(res){
+    if (res.error) console.error('insertAnswer failed', res.error);
+  });
+}
+
+function maybeLeaveSplash(){
+  if (!splashTimerDone || !authResolved) return;
+  if (Echo.session){
+    loadCirclesFromServer().then(function(){
+      renderCirclesList();
+      showScreen('circles');
+    });
+  } else {
+    showScreen('auth');
+  }
+}
+
+function onAuthStateChanged(session){
+  var hadSession = !!Echo.session;
+  Echo.session = session;
+  authResolved = true;
+  if (!splashTimerDone){
+    maybeLeaveSplash();
+    return;
+  }
+  if (session && !hadSession){
+    loadCirclesFromServer().then(function(){
+      renderCirclesList();
+      showScreen('circles');
+    });
+  } else if (!session && hadSession){
+    Echo.circles = [];
+    Echo.current = null;
+    showScreen('auth');
+  }
+}
+
+var FLIP_MS = 520;
+
+var TAGS = {
+  new: { cls: 'new', uk: 'Нові знайомства', en: 'New connections' },
+  relationship: { cls: 'relationship', uk: 'Стосунки', en: 'Relationship' },
+  friendship: { cls: 'friendship', uk: 'Дружба', en: 'Friendship' }
+};
+
+var LANG_LABEL = { uk: 'UA', en: 'EN' };
+
+/* ===== UI copy — switched app-wide by the language toggle ===== */
+var STRINGS = {
+  appTitle: { uk: 'Мої діалоги', en: 'My dialogs' },
+  emptyGreeting: { uk: 'Привіт!', en: 'Hi!' },
+  emptyDesc: { uk: 'Я буду рости, поки ти дізнаватимешся більше про людей і про себе ✨', en: 'I will grow as you learn more about people and about yourself ✨' },
+  createDialog: { uk: 'Створити діалог', en: 'Start a dialog' },
+  newDialogTitle: { uk: 'Новий діалог', en: 'New dialog' },
+  newDialogSubtitle: { uk: 'Створимо простір для цікавих розмов і нових відкриттів ✨', en: 'Let’s create space for interesting conversations and new discoveries ✨' },
+  nameLabel: { uk: 'Ім’я', en: 'Name' },
+  namePlaceholder: { uk: 'Наприклад, Артем', en: 'e.g. Artem' },
+  nameError: { uk: 'Введи ім’я, щоб продовжити', en: 'Enter a name to continue' },
+  categoryLabel: { uk: 'Що вас пов’язує?', en: 'What connects you?' },
+  catNewTitle: { uk: 'Нове знайомство', en: 'New acquaintance' },
+  catNewDesc: { uk: 'Легкі й безпечні питання, щоб краще пізнати одне одного', en: 'Light, safe questions to get to know each other better' },
+  catRelTitle: { uk: 'Стосунки', en: 'Relationship' },
+  catRelDesc: { uk: 'Глибокі питання, щоб зміцнити зв’язок і дізнатися більше одне про одного', en: 'Deep questions to strengthen your bond and learn more about each other' },
+  catFriendTitle: { uk: 'Дружба', en: 'Friendship' },
+  catFriendDesc: { uk: 'Щоб краще зрозуміти, підтримати і стати ближчими', en: 'To understand, support, and grow closer' },
+  questionsAsked: { uk: 'Питань пройдено', en: 'Questions asked' },
+  tapToFlip: { uk: 'Клікни на картку, щоб перегорнути', en: 'Tap the card to flip it' },
+  tagline: { uk: 'Що витягнеш сьогодні?', en: 'What will you draw today?' },
+  skip: { uk: 'Пропустити', en: 'Skip' },
+  answered: { uk: 'Запитано', en: 'Asked' },
+  noteTitle: { uk: 'Залиш нотатку', en: 'Leave a note' },
+  noteSub: { uk: 'Що запам’яталось із цієї відповіді? Необов’язково ✨', en: 'What stood out from this answer? Optional ✨' },
+  notePlaceholder: { uk: 'Наприклад: сказав(ла), що мріє про подорож у Карпати…', en: 'e.g.: said they dream of a trip to the mountains…' },
+  noteSave: { uk: 'Зберігти', en: 'Save' },
+  toastGrowth: { uk: 'Ого, ви вже трохи ближчі ✨', en: 'Wow, you are already a bit closer ✨' },
+  toastDeleted: { uk: 'Діалог видалено', en: 'Dialog deleted' },
+  deleteTitle: { uk: 'Видалити діалог?', en: 'Delete this dialog?' },
+  deleteCancel: { uk: 'Скасувати', en: 'Cancel' },
+  deleteConfirm: { uk: 'Видалити', en: 'Delete' },
+  dialogMenuTitle: { uk: 'Діалог', en: 'Dialog' },
+  menuNotes: { uk: 'Мої нотатки', en: 'My notes' },
+  menuLang: { uk: 'Змінити мову на English', en: 'Change language to Українська' },
+  menuDelete: { uk: 'Видалити діалог', en: 'Delete dialog' },
+  notesScreenSubtitle: { uk: 'Історія цього кола', en: 'This circle’s history' },
+  notesEmptyTitle: { uk: 'Тут зберігатимуться важливі моменти ✨', en: 'Important moments will be kept here ✨' },
+  notesEmptySubtitle: { uk: 'Після відповідей ти зможеш залишати нотатки про те, що хочеш запам’ятати.', en: 'After answering, you’ll be able to leave notes about what you want to remember.' },
+  authTitle: { uk: 'Твоя історія починається тут ✨', en: 'Your story begins here ✨' },
+  authSubtitle: { uk: 'Увійди, щоб зберігати свої кола, відповіді та моменти, до яких захочеться повернутися.', en: 'Sign in to keep your circles, answers, and moments you’ll want to come back to.' },
+  authEmailLabel: { uk: 'Пошта', en: 'Email' },
+  authEmailError: { uk: 'Введи коректну пошту', en: 'Enter a valid email' },
+  authSendLink: { uk: 'Надіслати посилання', en: 'Send magic link' },
+  authSending: { uk: 'Надсилаємо…', en: 'Sending…' },
+  authLinkSent: { uk: 'Перевір пошту — ми надіслали посилання для входу ✨', en: 'Check your email — we sent you a sign-in link ✨' },
+  authError: { uk: 'Щось пішло не так. Спробуй ще раз.', en: 'Something went wrong. Please try again.' },
+  authGoogle: { uk: 'Продовжити з Google', en: 'Continue with Google' },
+  storyCompleteTitle: { uk: 'Ваша історія завершилась ✨', en: 'Your story has ended ✨' },
+  storyCompleteSubtitle: { uk: 'Іскра, з якої все почалося, стала частиною вашої спільної історії.', en: 'The spark that started it all has become part of your shared history.' },
+  viewNotes: { uk: 'Переглянути нотатки', en: 'View notes' }
+};
+
+/* ===== Іскрик growth assets — stable Cloudinary URLs, do not regenerate ===== */
+var NEW_DIALOG_IMAGE = 'https://res.cloudinary.com/dhdh7bf7g/image/upload/v1787319811/new_dialog_scmscm.png';
+var AUTH_MASCOT_IMAGE = 'https://res.cloudinary.com/dhdh7bf7g/image/upload/v1787586452/5b876c37-d9ec-4146-b601-3a058842eeeb_n1svzd.png';
+
+var GROWTH = {
+  images: [
+    'https://res.cloudinary.com/dhdh7bf7g/image/upload/v1787235483/Echo_1_qghgkr.jpg',
+    'https://res.cloudinary.com/dhdh7bf7g/image/upload/v1787235483/Echo_2_dfxd55.png',
+    'https://res.cloudinary.com/dhdh7bf7g/image/upload/v1787235483/Echo_3_hyvvxs.png',
+    'https://res.cloudinary.com/dhdh7bf7g/image/upload/v1787235483/Echo_4_etsjnz.png',
+    'https://res.cloudinary.com/dhdh7bf7g/image/upload/v1787237849/Echo_5_gpfm5i.png'
+  ],
+  idle: [
+    'https://res.cloudinary.com/dhdh7bf7g/video/upload/v1787235620/Echo_1_IDLE_tuavjt.mp4',
+    'https://res.cloudinary.com/dhdh7bf7g/video/upload/v1787237796/Echo_2_IDLE_hfwev9.mp4',
+    'https://res.cloudinary.com/dhdh7bf7g/video/upload/v1787237797/Echo_3_tvoxw6.mp4',
+    'https://res.cloudinary.com/dhdh7bf7g/video/upload/v1787237798/Echo_4_asmhsw.mp4',
+    'https://res.cloudinary.com/dhdh7bf7g/video/upload/v1787237849/Echo_5_cttlo4.mp4'
+  ],
+  transitions: [
+    'https://res.cloudinary.com/dhdh7bf7g/video/upload/v1787237796/Echo_1-2_xzsoen.mp4',
+    'https://res.cloudinary.com/dhdh7bf7g/video/upload/v1787237797/Echo_2-3_inwpih.mp4',
+    'https://res.cloudinary.com/dhdh7bf7g/video/upload/v1787237797/Echo_3-4_rt0pb7.mp4',
+    'https://res.cloudinary.com/dhdh7bf7g/video/upload/v1787237849/Echo_4-5_hu6jjs.mp4'
+  ]
+};
+
+/* ===== Icon set — thin outline, single color, swapped in for [data-icon] placeholders on init ===== */
+var ICON = {
+  arrowLeft: '<svg viewBox="0 0 24 24" fill="none"><path d="M10.295 19.716C10.3886 19.8082 10.4994 19.881 10.6211 19.9304C10.7429 19.9798 10.8731 20.0047 11.0045 20.0037C11.1358 20.0027 11.2657 19.9759 11.3867 19.9247C11.5076 19.8736 11.6173 19.7991 11.7095 19.7055C11.8017 19.6119 11.8746 19.5011 11.9239 19.3794C11.9733 19.2577 11.9982 19.1274 11.9972 18.9961C11.9963 18.8647 11.9694 18.7349 11.9183 18.6139C11.8671 18.4929 11.7926 18.3832 11.699 18.291L6.32903 13.001H19.999C20.2642 13.001 20.5186 12.8956 20.7061 12.7081C20.8937 12.5206 20.999 12.2662 20.999 12.001C20.999 11.7358 20.8937 11.4814 20.7061 11.2939C20.5186 11.1064 20.2642 11.001 19.999 11.001H6.33603L11.7 5.714C11.884 5.52678 11.987 5.27475 11.9867 5.01228C11.9865 4.74981 11.8831 4.49796 11.6988 4.31106C11.5145 4.12416 11.2642 4.0172 11.0017 4.01326C10.7393 4.00932 10.4858 4.10871 10.296 4.29L3.37203 11.112C3.25411 11.2283 3.16048 11.3669 3.09657 11.5196C3.03267 11.6724 2.99976 11.8364 2.99976 12.002C2.99976 12.1676 3.03267 12.3316 3.09657 12.4844C3.16048 12.6371 3.25411 12.7757 3.37203 12.892L10.296 19.715L10.295 19.716Z" fill="currentColor"/></svg>',
+  plus: '<svg viewBox="0 0 24 24" fill="none"><path d="M11.883 3.007L12 3C12.2449 3.00003 12.4813 3.08996 12.6644 3.25272C12.8474 3.41547 12.9643 3.63975 12.993 3.883L13 4V11H20C20.2449 11 20.4813 11.09 20.6644 11.2527C20.8474 11.4155 20.9643 11.6397 20.993 11.883L21 12C21 12.2449 20.91 12.4813 20.7473 12.6644C20.5845 12.8474 20.3603 12.9643 20.117 12.993L20 13H13V20C13 20.2449 12.91 20.4813 12.7473 20.6644C12.5845 20.8474 12.3603 20.9643 12.117 20.993L12 21C11.7551 21 11.5187 20.91 11.3356 20.7473C11.1526 20.5845 11.0357 20.3603 11.007 20.117L11 20V13H4C3.75507 13 3.51866 12.91 3.33563 12.7473C3.15259 12.5845 3.03566 12.3603 3.007 12.117L3 12C3.00003 11.7551 3.08996 11.5187 3.25272 11.3356C3.41547 11.1526 3.63975 11.0357 3.883 11.007L4 11H11V4C11 3.75507 11.09 3.51866 11.2527 3.33563C11.4155 3.15259 11.6397 3.03566 11.883 3.007Z" fill="currentColor"/></svg>',
+  sparkle: '<svg viewBox="0 0 18 18" fill="none"><path d="M9.9082 2.32725C9.53695 1.57425 8.4637 1.57425 8.09245 2.32725L6.32395 5.91L2.3692 6.4845C1.53895 6.60525 1.2067 7.626 1.8082 8.21175L4.66945 11.0017L3.99445 14.9393C3.85195 15.7665 4.72045 16.3973 5.46295 16.0072L8.99995 14.1473L12.5369 16.0072C13.2794 16.3973 14.1479 15.7673 14.0062 14.9393L13.3312 11.0017L16.1924 8.21175C16.7924 7.62675 16.4617 6.60525 15.6307 6.4845L11.6774 5.91L9.90745 2.32725H9.9082ZM0.872946 2.8365C0.779865 2.95307 0.736898 3.10183 0.753494 3.25008C0.770091 3.39832 0.844892 3.5339 0.961446 3.627L2.83645 5.127C2.95301 5.22019 3.10182 5.26326 3.25013 5.24673C3.32357 5.23855 3.39468 5.21598 3.4594 5.18032C3.52412 5.14465 3.58118 5.09659 3.62732 5.03888C3.67346 4.98116 3.70779 4.91492 3.72833 4.84394C3.74887 4.77296 3.75524 4.69863 3.74705 4.62519C3.73887 4.55175 3.7163 4.48064 3.68064 4.41592C3.64497 4.3512 3.59691 4.29414 3.5392 4.248L1.6642 2.748C1.60646 2.7018 1.54017 2.66743 1.46914 2.64687C1.3981 2.62631 1.32371 2.61996 1.25022 2.62818C1.17673 2.6364 1.10558 2.65903 1.04084 2.69477C0.976103 2.73052 0.91905 2.77868 0.872946 2.8365Z" fill="currentColor"/><path d="M17.1271 13.6635C17.2202 13.547 17.2633 13.3983 17.2469 13.2501C17.2304 13.1018 17.1558 12.9662 17.0393 12.873L15.1643 11.373C15.0478 11.2797 14.8989 11.2365 14.7505 11.253C14.6021 11.2695 14.4664 11.3442 14.3731 11.4607C14.2798 11.5773 14.2366 11.7262 14.2531 11.8745C14.2695 12.0229 14.3443 12.1587 14.4608 12.252L16.3358 13.752C16.3935 13.7982 16.4598 13.8327 16.5308 13.8533C16.6018 13.8739 16.6761 13.8803 16.7496 13.8722C16.8231 13.864 16.8943 13.8415 16.9591 13.8058C17.0238 13.7701 17.0809 13.7213 17.1271 13.6635ZM0.961565 12.873C0.845003 12.9662 0.770234 13.1019 0.753707 13.2502C0.73718 13.3985 0.78025 13.5473 0.87344 13.6639C0.966631 13.7804 1.10231 13.8552 1.25063 13.8717C1.39894 13.8883 1.54775 13.8452 1.66432 13.752L3.53932 12.252C3.65588 12.1588 3.73065 12.0231 3.74717 11.8748C3.7637 11.7265 3.72063 11.5777 3.62744 11.4611C3.53425 11.3446 3.39857 11.2698 3.25025 11.2533C3.10194 11.2367 2.95313 11.2798 2.83657 11.373L0.961565 12.873ZM17.1271 2.8365C17.2202 2.95297 17.2633 3.10168 17.2469 3.24992C17.2304 3.39816 17.1558 3.53379 17.0393 3.627L15.1643 5.127C15.0478 5.22029 14.8989 5.26345 14.7505 5.247C14.6021 5.23054 14.4664 5.15581 14.3731 5.03925C14.2798 4.92269 14.2366 4.77384 14.2531 4.62545C14.2695 4.47706 14.3443 4.34129 14.4608 4.248L16.3358 2.748C16.3936 2.7018 16.4598 2.66743 16.5309 2.64687C16.6019 2.62631 16.6763 2.61996 16.7498 2.62818C16.8233 2.6364 16.8944 2.65903 16.9592 2.69477C17.0239 2.73052 17.081 2.77868 17.1271 2.8365Z" fill="currentColor"/></svg>',
+  heart: '<svg viewBox="0 0 18 18" fill="none"><path d="M9.61492 4.185L8.99992 4.8015L8.38192 4.1835C7.62586 3.42753 6.60045 3.00288 5.53128 3.00295C4.46211 3.00302 3.43676 3.42781 2.6808 4.18387C1.92483 4.93994 1.50017 5.96535 1.50024 7.03452C1.50031 8.10368 1.92511 9.12903 2.68117 9.885L8.60242 15.8063C8.70789 15.9116 8.85086 15.9708 8.99992 15.9708C9.14899 15.9708 9.29195 15.9116 9.39742 15.8063L15.3239 9.8835C16.0791 9.12737 16.5032 8.10237 16.5031 7.03372C16.5029 5.96507 16.0785 4.94018 15.3232 4.18425C14.9485 3.80928 14.5035 3.51182 14.0138 3.30888C13.5241 3.10593 12.9992 3.00148 12.469 3.00148C11.9389 3.00148 11.414 3.10593 10.9243 3.30888C10.4346 3.51182 9.98964 3.81003 9.61492 4.185Z" fill="currentColor"/></svg>',
+  chat: '<svg viewBox="0 0 18 18" fill="none"><path d="M7.12494 2.25C6.17862 2.24972 5.24752 2.4882 4.41784 2.94335C3.58816 3.3985 2.88673 4.05562 2.37847 4.85387C1.8702 5.65211 1.57155 6.56569 1.51015 7.51002C1.44874 8.45435 1.62658 9.39891 2.02719 10.2563C1.83842 11.0376 1.66812 11.8233 1.51644 12.6127C1.49336 12.7318 1.49962 12.8548 1.53469 12.9709C1.56976 13.087 1.63259 13.1928 1.71773 13.2792C1.80287 13.3656 1.90778 13.43 2.02337 13.4668C2.13897 13.5035 2.26178 13.5116 2.38119 13.4902C2.84844 13.4077 3.86469 13.2202 4.80819 13.0028C5.57292 13.3476 6.4051 13.517 7.24379 13.4986C8.08247 13.4803 8.90643 13.2745 9.65531 12.8965C10.4042 12.5185 11.059 11.9777 11.5719 11.3139C12.0848 10.65 12.4426 9.87982 12.6193 9.05975C12.796 8.23968 12.787 7.39048 12.5931 6.57433C12.3991 5.75817 12.025 4.99574 11.4982 4.34286C10.9715 3.68998 10.3054 3.1632 9.54865 2.80107C8.79194 2.43895 7.96383 2.25066 7.12494 2.25ZM7.09644 14.25C8.1356 15.2161 9.50253 15.7522 10.9214 15.75C11.7464 15.75 12.5302 15.5723 13.2374 15.2528C14.0197 15.4357 14.8769 15.6187 15.4222 15.7327C15.5757 15.765 15.7348 15.758 15.8849 15.7124C16.035 15.6668 16.1712 15.5841 16.2808 15.472C16.3905 15.3599 16.4701 15.2219 16.5124 15.0708C16.5546 14.9198 16.5581 14.7605 16.5224 14.6077C16.4009 14.0805 16.2089 13.2615 16.0192 12.5055C16.3525 11.7915 16.5322 11.0154 16.5465 10.2275C16.5609 9.43963 16.4096 8.65752 16.1024 7.93183C15.7953 7.20614 15.3392 6.55304 14.7636 6.01483C14.188 5.47662 13.5058 5.0653 12.7612 4.8075C13.0273 5.29115 13.229 5.80753 13.3612 6.3435C13.9936 6.75111 14.5135 7.31089 14.8735 7.97156C15.2334 8.63222 15.4218 9.37265 15.4214 10.125C15.4214 10.869 15.2414 11.5687 14.9227 12.1852L14.8252 12.375L14.8777 12.582C15.0487 13.2532 15.2279 14.007 15.3592 14.5695C14.7787 14.4473 13.9957 14.277 13.3042 14.112L13.1062 14.0655L12.9239 14.1562C12.3209 14.4562 11.6414 14.625 10.9214 14.625C10.155 14.6264 9.40092 14.4312 8.73144 14.058C8.197 14.1923 7.64744 14.2568 7.09644 14.25Z" fill="currentColor"/></svg>',
+  soundOn: '<svg viewBox="0 0 24 24" fill="none"><path d="M15 4.25v15.496c0 1.078-1.274 1.65-2.08.934l-4.492-3.994a.75.75 0 0 0-.498-.19H4.25A2.25 2.25 0 0 1 2 14.247V9.75a2.25 2.25 0 0 1 2.25-2.25h3.68a.75.75 0 0 0 .498-.19l4.491-3.993C13.726 2.599 15 3.17 15 4.25Zm3.992 1.647a.75.75 0 0 1 1.049.157A9.959 9.959 0 0 1 22 12a9.96 9.96 0 0 1-1.96 5.946.75.75 0 0 1-1.205-.892A8.459 8.459 0 0 0 20.5 12a8.459 8.459 0 0 0-1.665-5.054.75.75 0 0 1 .157-1.049ZM17.143 8.37a.75.75 0 0 1 1.017.303c.536.99.84 2.125.84 3.328a6.973 6.973 0 0 1-.84 3.328.75.75 0 0 1-1.32-.714c.42-.777.66-1.666.66-2.614s-.24-1.837-.66-2.614a.75.75 0 0 1 .303-1.017Z" fill="currentColor"/></svg>',
+  soundOff: '<svg viewBox="0 0 24 24" fill="none"><path d="M15 4.25c0-1.079-1.274-1.65-2.08-.934L8.427 7.309a.75.75 0 0 1-.498.19H4.25A2.25 2.25 0 0 0 2 9.749v4.497a2.25 2.25 0 0 0 2.25 2.25h3.68a.75.75 0 0 1 .498.19l4.491 3.994c.806.716 2.081.144 2.081-.934V4.25Z" fill="currentColor"/><path d="M16.22 9.22a.75.75 0 0 1 1.06 0L19 10.94l1.72-1.72a.75.75 0 1 1 1.06 1.06L20.06 12l1.72 1.72a.75.75 0 1 1-1.06 1.06L19 13.06l-1.72 1.72a.75.75 0 1 1-1.06-1.06L17.94 12l-1.72-1.72a.75.75 0 0 1 0-1.06Z" fill="currentColor"/></svg>',
+  edit: '<svg viewBox="0 0 24 24" fill="none"><path d="M13.94 5 19 10.06 9.062 20a2.25 2.25 0 0 1-.999.58l-5.116 1.395a.75.75 0 0 1-.92-.921l1.395-5.116a2.25 2.25 0 0 1 .58-.999L13.938 5Zm7.09-2.03a3.578 3.578 0 0 1 0 5.06l-.97.97L15 3.94l.97-.97a3.578 3.578 0 0 1 5.06 0Z" fill="currentColor"/></svg>',
+  close: '<svg viewBox="0 0 24 24" fill="none"><path d="M5.55815 5.72372L5.63593 5.63604C5.80915 5.46287 6.0399 5.35929 6.28441 5.34495C6.52893 5.33062 6.7702 5.40652 6.96247 5.55826L7.05015 5.63604L11.9999 10.5858L16.9496 5.63604C17.1229 5.46287 17.3536 5.35929 17.5981 5.34495C17.8426 5.33062 18.0839 5.40652 18.2762 5.55826L18.3639 5.63604C18.537 5.80926 18.6406 6.04001 18.6549 6.28452C18.6693 6.52903 18.5934 6.7703 18.4416 6.96257L18.3639 7.05025L13.4141 12L18.3639 16.9497C18.537 17.123 18.6406 17.3537 18.6549 17.5982C18.6693 17.8427 18.5934 18.084 18.4416 18.2763L18.3639 18.364C18.1906 18.5371 17.9599 18.6407 17.7154 18.655C17.4709 18.6694 17.2296 18.5935 17.0373 18.4417L16.9496 18.364L11.9999 13.4142L7.05015 18.364C6.87693 18.5371 6.64618 18.6407 6.40167 18.655C6.15716 18.6694 5.91588 18.5935 5.72361 18.4417L5.63593 18.364C5.46276 18.1907 5.35919 17.96 5.34485 17.7155C5.33051 17.471 5.40641 17.2297 5.55815 17.0374L5.63593 16.9497L10.5857 12L5.63593 7.05025C5.46276 6.87704 5.35919 6.64629 5.34485 6.40177C5.33051 6.15726 5.40641 5.91599 5.55815 5.72372Z" fill="currentColor"/></svg>',
+  trash: '<svg viewBox="0 0 24 24" fill="none"><path d="M21.5 6a1 1 0 0 1-.883.993L20.5 7h-.845l-1.231 12.52A2.75 2.75 0 0 1 15.687 22H8.313a2.75 2.75 0 0 1-2.737-2.48L4.345 7H3.5a1 1 0 0 1 0-2h5a3.5 3.5 0 1 1 7 0h5a1 1 0 0 1 1 1Zm-7.25 3.25a.75.75 0 0 0-.743.648L13.5 10v7l.007.102a.75.75 0 0 0 1.486 0L15 17v-7l-.007-.102a.75.75 0 0 0-.743-.648Zm-4.5 0a.75.75 0 0 0-.743.648L9 10v7l.007.102a.75.75 0 0 0 1.486 0L10.5 17v-7l-.007-.102a.75.75 0 0 0-.743-.648ZM12 3.5A1.5 1.5 0 0 0 10.5 5h3A1.5 1.5 0 0 0 12 3.5Z" fill="currentColor"/></svg>',
+  more: '<svg viewBox="0 0 24 24" fill="none"><path d="M12 8C11.4696 8 10.9609 7.78929 10.5858 7.41421C10.2107 7.03914 10 6.53043 10 6C10 5.46957 10.2107 4.96086 10.5858 4.58579C10.9609 4.21071 11.4696 4 12 4C12.5304 4 13.0391 4.21071 13.4142 4.58579C13.7893 4.96086 14 5.46957 14 6C14 6.53043 13.7893 7.03914 13.4142 7.41421C13.0391 7.78929 12.5304 8 12 8ZM12 14C11.4696 14 10.9609 13.7893 10.5858 13.4142C10.2107 13.0391 10 12.5304 10 12C10 11.4696 10.2107 10.9609 10.5858 10.5858C10.9609 10.2107 11.4696 10 12 10C12.5304 10 13.0391 10.2107 13.4142 10.5858C13.7893 10.9609 14 11.4696 14 12C14 12.5304 13.7893 13.0391 13.4142 13.4142C13.0391 13.7893 12.5304 14 12 14ZM10 18C10 18.5304 10.2107 19.0391 10.5858 19.4142C10.9609 19.7893 11.4696 20 12 20C12.5304 20 13.0391 19.7893 13.4142 19.4142C13.7893 19.0391 14 18.5304 14 18C14 17.4696 13.7893 16.9609 13.4142 16.5858C13.0391 16.2107 12.5304 16 12 16C11.4696 16 10.9609 16.2107 10.5858 16.5858C10.2107 16.9609 10 17.4696 10 18Z" fill="currentColor"/></svg>',
+  notes: '<svg viewBox="0 0 24 24" fill="none"><path d="M17.75 3A3.25 3.25 0 0 1 21 6.25V13h-4.75A3.25 3.25 0 0 0 13 16.25V21H6.25A3.25 3.25 0 0 1 3 17.75V6.25A3.25 3.25 0 0 1 6.25 3h11.5Zm2.81 11.5-6.06 6.06v-4.31c0-.966.784-1.75 1.75-1.75h4.31Z" fill="currentColor"/></svg>',
+  language: '<svg viewBox="0 0 24 24" fill="none"><path d="M8.904 16.5h6.192C14.476 19.773 13.234 22 12 22c-1.197 0-2.4-2.094-3.038-5.204l-.058-.294h6.192-6.192Zm-5.838.001H7.37c.365 2.082.983 3.854 1.793 5.093a10.029 10.029 0 0 1-5.952-4.814l-.146-.279Zm13.563 0h4.305a10.028 10.028 0 0 1-6.097 5.093c.755-1.158 1.344-2.778 1.715-4.681l.076-.412h4.306-4.306Zm.302-6.5h4.87a10.055 10.055 0 0 1-.257 5H16.84a28.539 28.539 0 0 0 .13-4.344L16.93 10h4.87-4.87ZM2.198 10h4.87a28.211 28.211 0 0 0 .034 4.42l.057.58H2.456a10.047 10.047 0 0 1-.258-5Zm6.377 0h6.85a25.838 25.838 0 0 1-.037 4.425l-.062.575H8.674a25.979 25.979 0 0 1-.132-4.512L8.575 10h6.85-6.85Zm6.37-7.424-.109-.17A10.027 10.027 0 0 1 21.372 8.5H16.78c-.316-2.416-.956-4.492-1.837-5.923l-.108-.17.108.17Zm-5.903-.133.122-.037C8.283 3.757 7.628 5.736 7.28 8.06l-.061.44H2.628a10.028 10.028 0 0 1 6.414-6.057l.122-.037-.122.037ZM12 2.002c1.319 0 2.646 2.542 3.214 6.183l.047.315H8.739C9.28 4.691 10.643 2.002 12 2.002Z" fill="currentColor"/></svg>',
+  logout: '<svg viewBox="0 0 24 24" fill="none"><path d="M9 21H5.75A1.75 1.75 0 0 1 4 19.25V4.75A1.75 1.75 0 0 1 5.75 3H9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17l5-5-5-5M21 12H9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+};
+
+var els = {};
+var growthTimer = null;
+var circlesGrowthTimer = null;
+
+function cacheEls(){
+  els.screen_splash = document.getElementById('screen-splash');
+  els.screen_auth = document.getElementById('screen-auth');
+  els.screen_circles = document.getElementById('screen-circles');
+  els.screen_newcircle = document.getElementById('screen-newcircle');
+  els.screen_draw = document.getElementById('screen-draw');
+
+  els.authMascot = document.getElementById('auth-mascot');
+  els.authEmail = document.getElementById('auth-email');
+  els.authEmailError = document.getElementById('auth-email-error');
+  els.authStatusText = document.getElementById('auth-status-text');
+  els.btnAuthMagicLink = document.getElementById('btn-auth-magic-link');
+  els.btnAuthGoogle = document.getElementById('btn-auth-google');
+  els.btnSignOut = document.getElementById('btn-sign-out');
+
+  els.circlesList = document.getElementById('circles-list');
+  els.circlesMascot = document.getElementById('circles-mascot');
+  els.btnFabCreate = document.getElementById('btn-fab-create');
+  els.deleteModal = document.getElementById('delete-modal');
+  els.deleteSubText = document.getElementById('delete-sub-text');
+  els.btnDeleteClose = document.getElementById('btn-delete-close');
+  els.btnDeleteCancel = document.getElementById('btn-delete-cancel');
+  els.btnDeleteConfirm = document.getElementById('btn-delete-confirm');
+  els.btnBackToCircles = document.getElementById('btn-back-to-circles');
+  els.btnBackToCircles2 = document.getElementById('btn-back-to-circles-2');
+
+  els.newcircleMascot = document.getElementById('newcircle-mascot');
+  els.inputName = document.getElementById('input-name');
+  els.nameError = document.getElementById('name-error');
+  els.optionList = document.getElementById('option-list');
+  els.btnCreateCircle = document.getElementById('btn-create-circle');
+
+  els.drawCircleName = document.getElementById('draw-circle-name');
+  els.drawCircleTag = document.getElementById('draw-circle-tag');
+  els.drawProgressLabel = document.getElementById('draw-progress-label');
+  els.drawProgressFill = document.getElementById('draw-progress-fill');
+  els.drawCard = document.getElementById('draw-card');
+  els.drawVideo = document.getElementById('draw-video');
+  els.drawTagline = document.getElementById('draw-tagline');
+  els.drawCompleteSubtitle = document.getElementById('draw-complete-subtitle');
+  els.drawQuestionText = document.getElementById('draw-question-text');
+  els.drawHelperText = document.getElementById('draw-helper-text');
+  els.drawActions = document.getElementById('draw-actions');
+  els.btnSkip = document.getElementById('btn-skip');
+  els.btnAnswered = document.getElementById('btn-answered');
+  els.btnViewNotesComplete = document.getElementById('btn-view-notes-complete');
+  els.btnEditNote = document.getElementById('btn-edit-note');
+  els.btnDrawMenu = document.getElementById('btn-draw-menu');
+
+  els.noteModal = document.getElementById('note-modal');
+  els.noteText = document.getElementById('note-text');
+  els.btnNoteClose = document.getElementById('btn-note-close');
+  els.btnNoteSave = document.getElementById('btn-note-save');
+
+  els.drawMenuModal = document.getElementById('draw-menu-modal');
+  els.btnMenuClose = document.getElementById('btn-menu-close');
+  els.btnMenuNotes = document.getElementById('btn-menu-notes');
+  els.btnMenuLang = document.getElementById('btn-menu-lang');
+  els.btnMenuDelete = document.getElementById('btn-menu-delete');
+
+  els.screen_notes = document.getElementById('screen-notes');
+  els.btnBackToDraw = document.getElementById('btn-back-to-draw');
+  els.notesCircleName = document.getElementById('notes-circle-name');
+  els.notesList = document.getElementById('notes-list');
+
+  els.toast = document.getElementById('toast');
+}
+
+function buildIcons(){
+  var nodes = document.querySelectorAll('[data-icon]');
+  for (var i = 0; i < nodes.length; i++){
+    var name = nodes[i].getAttribute('data-icon');
+    if (ICON[name]) nodes[i].innerHTML = ICON[name];
+  }
+}
+
+function escapeHtml(s){
+  return String(s).replace(/[&<>"']/g, function(ch){
+    return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[ch];
+  });
+}
+
+/* ===== Question pool / growth math ===== */
+function pool(c){
+  if (c.category === 'new') return QUESTIONS.filter(function(q){ return q.s === 'g'; });
+  if (c.category === 'friendship') return QUESTIONS.filter(function(q){ return q.s === 'f'; });
+  return QUESTIONS.filter(function(q){ return q.s === 'g' || q.s === 'r'; });
+}
+
+function qText(q){
+  return Echo.lang === 'en' ? q.en : q.uk;
+}
+
+/* ===== App-wide language switch ===== */
+function applyI18n(){
+  var nodes = document.querySelectorAll('[data-i18n]');
+  for (var i = 0; i < nodes.length; i++){
+    var key = nodes[i].getAttribute('data-i18n');
+    if (STRINGS[key]) nodes[i].textContent = STRINGS[key][Echo.lang];
+  }
+  var placeholders = document.querySelectorAll('[data-i18n-placeholder]');
+  for (var j = 0; j < placeholders.length; j++){
+    var pKey = placeholders[j].getAttribute('data-i18n-placeholder');
+    if (STRINGS[pKey]) placeholders[j].setAttribute('placeholder', STRINGS[pKey][Echo.lang]);
+  }
+  var toggles = document.querySelectorAll('.lang-toggle');
+  for (var k = 0; k < toggles.length; k++){
+    toggles[k].textContent = LANG_LABEL[Echo.lang];
+  }
+}
+
+function toggleLang(){
+  Echo.lang = Echo.lang === 'en' ? 'uk' : 'en';
+  applyI18n();
+  renderCirclesList();
+  var c = Echo.current;
+  if (c){
+    setTag(els.drawCircleTag, c.category);
+    if (c.flipped && Echo.currentQuestion){
+      els.drawQuestionText.textContent = qText(Echo.currentQuestion);
+    } else if (isPoolComplete(c)){
+      els.drawTagline.textContent = STRINGS.storyCompleteTitle[Echo.lang];
+      els.drawCompleteSubtitle.textContent = STRINGS.storyCompleteSubtitle[Echo.lang];
+    } else if (!c.flipped){
+      els.drawTagline.textContent = STRINGS.tagline[Echo.lang];
+    }
+  }
+}
+
+function toggleMute(){
+  Echo.muted = !Echo.muted;
+  els.drawVideo.muted = Echo.muted;
+  var icon = Echo.muted ? ICON.soundOff : ICON.soundOn;
+  var toggles = document.querySelectorAll('.mute-toggle .icon');
+  for (var j = 0; j < toggles.length; j++){
+    toggles[j].innerHTML = icon;
+  }
+}
+
+/* ===== Delete circle ===== */
+var pendingDeleteId = null;
+
+function deleteSubText(name){
+  return Echo.lang === 'en'
+    ? 'You will permanently lose all notes and progress with ' + name + '.'
+    : 'Ти назавжди втратиш усі нотатки й прогрес у діалозі з ' + name + '.';
+}
+
+function openDeleteModal(c){
+  pendingDeleteId = c.id;
+  els.deleteSubText.textContent = deleteSubText(c.name);
+  els.deleteModal.classList.add('show');
+}
+
+function closeDeleteModal(){
+  els.deleteModal.classList.remove('show');
+  pendingDeleteId = null;
+}
+
+function doDeleteCircle(){
+  if (!pendingDeleteId) return;
+  var idToDelete = pendingDeleteId;
+  Echo.circles = Echo.circles.filter(function(c){ return c.id !== idToDelete; });
+  if (Echo.current && Echo.current.id === idToDelete) Echo.current = null;
+  closeDeleteModal();
+  goCircles();
+  showToast(STRINGS.toastDeleted[Echo.lang]);
+  if (supabase){
+    supabase.from('circles').delete().eq('id', idToDelete).then(function(res){
+      if (res.error) console.error('delete circle failed', res.error);
+    });
+  }
+}
+
+function growthStage(c){
+  var p = pool(c);
+  var pct = p.length ? (c.askedIds.length / p.length * 100) : 0;
+  if (pct >= 80) return 5;
+  if (pct >= 60) return 4;
+  if (pct >= 40) return 3;
+  if (pct >= 20) return 2;
+  return 1;
+}
+
+function drawNextQuestion(c){
+  var p = pool(c);
+  var unseen = p.filter(function(q){ return c.askedIds.indexOf(q.i) === -1; });
+  var source = unseen.length ? unseen : p;
+  Echo.currentQuestion = source[Math.floor(Math.random() * source.length)];
+}
+
+function isPoolComplete(c){
+  var p = pool(c);
+  return p.length > 0 && c.askedIds.length >= p.length;
+}
+
+function findQuestionById(qid){
+  for (var i = 0; i < QUESTIONS.length; i++){
+    if (String(QUESTIONS[i].i) === String(qid)) return QUESTIONS[i];
+  }
+  return null;
+}
+
+/* ===== Video / growth choreography — exact behavior per growth-mechanic.md ===== */
+function setVideoSrc(video, src, poster){
+  if (video.getAttribute('data-src') !== src){
+    video.setAttribute('data-src', src);
+    video.src = src;
+    if (poster) video.poster = poster;
+  }
+}
+
+var preloadedVideoSrcs = {};
+var preloadedVideoElements = [];
+function preloadVideo(src){
+  if (preloadedVideoSrcs[src]) return;
+  preloadedVideoSrcs[src] = true;
+  var v = document.createElement('video');
+  v.muted = true;
+  v.preload = 'auto';
+  v.src = src;
+  v.load();
+  preloadedVideoElements.push(v);
+}
+
+function startIdleCycle(video, c){
+  clearTimeout(growthTimer);
+  function playOnce(){
+    try { video.currentTime = 0; } catch(e){}
+    var p = video.play();
+    if (p && p.catch) p.catch(function(){});
+  }
+  video.onended = function(){
+    if (c.flipped) return;
+    growthTimer = setTimeout(function(){ if (!c.flipped) playOnce(); }, 5000);
+  };
+  playOnce();
+}
+
+function startCirclesIdleCycle(video){
+  clearTimeout(circlesGrowthTimer);
+  function playOnce(){
+    try { video.currentTime = 0; } catch(e){}
+    var p = video.play();
+    if (p && p.catch) p.catch(function(){});
+  }
+  video.onended = function(){
+    circlesGrowthTimer = setTimeout(playOnce, 5000);
+  };
+  playOnce();
+}
+
+function playTransitionThenIdle(video, c, newStage){
+  video.onended = function(){
+    video.onended = null;
+    /* Hide the video across the src swap so the viewer never sees the raw
+       cut between the transition clip's last frame and the idle clip's
+       first frame — fade out during the existing pause, fade back in once
+       the new source is already playing. */
+    video.style.opacity = '0';
+    setTimeout(function(){
+      c.growthLevel = newStage;
+      setVideoSrc(video, GROWTH.idle[newStage - 1], GROWTH.images[newStage - 1]);
+      startIdleCycle(video, c);
+      video.style.opacity = '1';
+      if (newStage < 5) preloadVideo(GROWTH.transitions[newStage - 1]);
+    }, 700);
+  };
+  var p = video.play();
+  if (p && p.catch) p.catch(function(){});
+}
+
+function flipBackAndResume(c, growth, prevStage, newStage){
+  clearTimeout(growthTimer);
+  var video = els.drawVideo;
+  if (growth){
+    setVideoSrc(video, GROWTH.transitions[prevStage - 1], GROWTH.images[prevStage - 1]);
+  }
+  /* Reset to frame 0 now, while the card is still mid-flip and the video is
+     hidden — not at reveal time. Otherwise the viewer sees a visible jump
+     from wherever playback was paused back to frame 0 on every single
+     flip-back, not just on growth transitions. */
+  try { video.currentTime = 0; } catch(e){}
+  video.pause();
+  c.flipped = false;
+  els.drawCard.classList.remove('flipped');
+  setTimeout(function(){
+    if (growth) playTransitionThenIdle(video, c, newStage);
+    else startIdleCycle(video, c);
+  }, FLIP_MS);
+}
+
+/* ===== Draw screen footer toggling ===== */
+function showFrontFooter(){
+  els.drawHelperText.style.display = 'block';
+  els.drawActions.classList.remove('show');
+  els.btnViewNotesComplete.style.display = 'none';
+}
+function showCompleteFooter(){
+  els.drawHelperText.style.display = 'none';
+  els.drawActions.classList.remove('show');
+  els.btnViewNotesComplete.style.display = '';
+}
+function showBackFooter(){
+  els.drawHelperText.style.display = 'none';
+  els.drawActions.classList.add('show');
+  els.btnViewNotesComplete.style.display = 'none';
+}
+
+function refreshDrawProgress(c){
+  var p = pool(c);
+  els.drawProgressLabel.textContent = c.askedIds.length + ' / ' + p.length;
+  var pct = p.length ? (c.askedIds.length / p.length * 100) : 0;
+  els.drawProgressFill.style.width = pct + '%';
+}
+
+function setTag(el, category){
+  var m = TAGS[category] || TAGS.new;
+  el.className = 'tag ' + m.cls;
+  el.textContent = m[Echo.lang];
+}
+
+/* ===== Toast ===== */
+var toastTimer = null;
+function showToast(msg){
+  els.toast.textContent = msg;
+  els.toast.classList.toggle('toast-top', Echo.screen === 'circles');
+  els.toast.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(function(){ els.toast.classList.remove('show'); }, 2600);
+}
+
+/* ===== Navigation ===== */
+var SPLASH_MS = 1600;
+
+function showScreen(name){
+  els.screen_splash.classList.toggle('hidden', name !== 'splash');
+  els.screen_auth.classList.toggle('hidden', name !== 'auth');
+  els.screen_circles.classList.toggle('hidden', name !== 'circles');
+  els.screen_newcircle.classList.toggle('hidden', name !== 'newcircle');
+  els.screen_draw.classList.toggle('hidden', name !== 'draw');
+  els.screen_notes.classList.toggle('hidden', name !== 'notes');
+  Echo.screen = name;
+}
+
+function closeAllModals(){
+  els.noteModal.classList.remove('show');
+  els.deleteModal.classList.remove('show');
+  els.drawMenuModal.classList.remove('show');
+  noteEditQuestion = null;
+  pendingDeleteId = null;
+}
+
+function goCircles(){
+  clearTimeout(growthTimer);
+  els.drawVideo.onended = null;
+  els.drawVideo.pause();
+  closeAllModals();
+  renderCirclesList();
+  showScreen('circles');
+}
+
+function goNewCircle(){
+  resetNewCircleForm();
+  showScreen('newcircle');
+}
+
+/* ===== Circles list rendering ===== */
+function circleCardEl(c){
+  var div = document.createElement('div');
+  div.className = 'circle-card';
+  var p = pool(c);
+  var pct = p.length ? (c.askedIds.length / p.length * 100) : 0;
+  var tag = TAGS[c.category] || TAGS.new;
+  div.innerHTML =
+    '<div class="circle-card-row">' +
+      '<div class="circle-avatar"><span>' + escapeHtml(c.name.charAt(0).toUpperCase()) + '</span></div>' +
+      '<div class="circle-info">' +
+        '<div class="circle-name">' + escapeHtml(c.name) + '</div>' +
+        '<span class="tag ' + tag.cls + '">' + tag[Echo.lang] + '</span>' +
+      '</div>' +
+      '<div class="circle-meta">' + c.askedIds.length + '/' + p.length + '</div>' +
+    '</div>' +
+    '<div class="progress-track"><div class="progress-fill" style="width:' + pct + '%"></div></div>';
+  buildIconsIn(div);
+  div.addEventListener('click', function(){ enterDraw(c.id); });
+  return div;
+}
+
+function emptyCardEl(){
+  var div = document.createElement('div');
+  div.className = 'circle-card-empty';
+  div.innerHTML =
+    '<h2 class="voice">' + STRINGS.emptyGreeting[Echo.lang] + '</h2>' +
+    '<p>' + STRINGS.emptyDesc[Echo.lang] + '</p>' +
+    '<div class="divider"></div>' +
+    '<button class="btn btn-primary btn-block" id="btn-empty-create"><span class="icon" data-icon="plus"></span>' + STRINGS.createDialog[Echo.lang] + '</button>';
+  buildIconsIn(div);
+  div.querySelector('#btn-empty-create').addEventListener('click', goNewCircle);
+  return div;
+}
+
+function buildIconsIn(root){
+  var nodes = root.querySelectorAll('[data-icon]');
+  for (var i = 0; i < nodes.length; i++){
+    var name = nodes[i].getAttribute('data-icon');
+    if (ICON[name]) nodes[i].innerHTML = ICON[name];
+  }
+}
+
+function mascotScaleFor(count){
+  var minScale = 0.5;
+  if (count <= 2) return 1;
+  var scale = 1 - (count - 2) * 0.1;
+  return Math.max(minScale, scale);
+}
+
+function renderCirclesList(){
+  var wrap = els.circlesList;
+  wrap.innerHTML = '';
+  var isEmpty = !Echo.circles.length;
+  if (isEmpty){
+    wrap.appendChild(emptyCardEl());
+  } else {
+    Echo.circles.forEach(function(c){ wrap.appendChild(circleCardEl(c)); });
+  }
+  els.btnFabCreate.style.display = isEmpty ? 'none' : '';
+  els.circlesMascot.style.setProperty('--mascot-scale', mascotScaleFor(Echo.circles.length));
+  ensureCirclesMascotVideo();
+}
+
+function maxGrowthStage(){
+  var max = 1;
+  for (var i = 0; i < Echo.circles.length; i++){
+    var s = growthStage(Echo.circles[i]);
+    if (s > max) max = s;
+  }
+  return max;
+}
+
+function ensureCirclesMascotVideo(){
+  var stage = maxGrowthStage();
+  var newSrc = GROWTH.idle[stage - 1];
+  var video = els.circlesMascot.querySelector('video');
+  if (!video){
+    els.circlesMascot.innerHTML = '<video muted playsinline preload="auto"></video>';
+    video = els.circlesMascot.querySelector('video');
+    setVideoSrc(video, newSrc, GROWTH.images[stage - 1]);
+    startCirclesIdleCycle(video);
+    return;
+  }
+  if (video.getAttribute('data-src') !== newSrc){
+    setVideoSrc(video, newSrc, GROWTH.images[stage - 1]);
+    startCirclesIdleCycle(video);
+  }
+}
+
+/* ===== New circle form ===== */
+function resetNewCircleForm(){
+  els.inputName.value = '';
+  els.nameError.classList.remove('show');
+  els.inputName.style.borderColor = '';
+  Echo.selectedCategory = 'new';
+  var cards = els.optionList.querySelectorAll('.option-card');
+  for (var i = 0; i < cards.length; i++){
+    cards[i].classList.toggle('selected', cards[i].getAttribute('data-category') === 'new');
+  }
+  els.newcircleMascot.innerHTML = '<img src="' + NEW_DIALOG_IMAGE + '" alt="Іскрик">';
+}
+
+function onCreateCircle(){
+  var name = els.inputName.value.trim();
+  if (!name){
+    els.nameError.classList.add('show');
+    els.inputName.style.borderColor = 'var(--border-active)';
+    els.inputName.focus();
+    return;
+  }
+  if (!supabase || !Echo.session) return;
+  supabase.from('circles').insert({
+    user_id: Echo.session.user.id,
+    name: name,
+    category: Echo.selectedCategory || 'new'
+  }).select().single().then(function(res){
+    if (res.error || !res.data){
+      console.error('create circle failed', res.error);
+      return;
+    }
+    var circle = hydrateCircle(res.data, []);
+    Echo.circles.push(circle);
+    enterDraw(circle.id);
+  });
+}
+
+/* ===== Draw screen ===== */
+function showCompletedState(c){
+  Echo.currentQuestion = null;
+  els.drawTagline.textContent = STRINGS.storyCompleteTitle[Echo.lang];
+  els.drawCompleteSubtitle.textContent = STRINGS.storyCompleteSubtitle[Echo.lang];
+  els.drawCompleteSubtitle.style.display = 'block';
+  els.drawCard.classList.add('completed');
+  showCompleteFooter();
+}
+
+function hideCompletedState(){
+  els.drawTagline.textContent = STRINGS.tagline[Echo.lang];
+  els.drawCompleteSubtitle.style.display = 'none';
+  els.drawCard.classList.remove('completed');
+}
+
+function enterDraw(id){
+  var c = null;
+  for (var i = 0; i < Echo.circles.length; i++){
+    if (Echo.circles[i].id === id){ c = Echo.circles[i]; break; }
+  }
+  if (!c) return;
+
+  closeAllModals();
+  Echo.current = c;
+  c.flipped = false;
+  els.drawCard.classList.remove('flipped');
+  els.drawCircleName.textContent = c.name;
+  setTag(els.drawCircleTag, c.category);
+  refreshDrawProgress(c);
+
+  if (isPoolComplete(c)){
+    showCompletedState(c);
+  } else {
+    hideCompletedState();
+    drawNextQuestion(c);
+    showFrontFooter();
+  }
+
+  var stage = growthStage(c);
+  c.growthLevel = stage;
+  els.drawVideo.muted = Echo.muted;
+  setVideoSrc(els.drawVideo, GROWTH.idle[stage - 1], GROWTH.images[stage - 1]);
+  startIdleCycle(els.drawVideo, c);
+  if (stage < 5) preloadVideo(GROWTH.transitions[stage - 1]);
+
+  showScreen('draw');
+}
+
+function flipToBack(){
+  var c = Echo.current;
+  if (!c || c.flipped || isPoolComplete(c)) return;
+  els.drawVideo.pause();
+  c.flipped = true;
+  els.drawCard.classList.add('flipped');
+  els.drawQuestionText.textContent = qText(Echo.currentQuestion);
+  showBackFooter();
+}
+
+function onSkip(){
+  var c = Echo.current;
+  if (!c || !c.flipped) return;
+  var stage = growthStage(c);
+  showFrontFooter();
+  flipBackAndResume(c, false, stage, stage);
+  setTimeout(function(){ drawNextQuestion(c); }, FLIP_MS);
+}
+
+function onAnswered(){
+  var c = Echo.current;
+  if (!c || !c.flipped) return;
+  var prevStage = growthStage(c);
+  var qid = Echo.currentQuestion.i;
+  var note = c.notes[String(qid)] || null;
+  if (c.askedIds.indexOf(qid) === -1) c.askedIds.push(qid);
+  var newStage = growthStage(c);
+  var growth = newStage > prevStage;
+  var complete = isPoolComplete(c);
+  var forceFinalGrowth = complete && !growth;
+  if (growth) preloadVideo(GROWTH.idle[newStage - 1]);
+  if (forceFinalGrowth) preloadVideo(GROWTH.transitions[3]);
+  refreshDrawProgress(c);
+  if (complete) showCompleteFooter(); else showFrontFooter();
+  if (forceFinalGrowth){
+    /* Already at max stage from an earlier answer — still play the final
+       growth transition as the completion reveal, rather than cutting
+       straight to a static idle frame. */
+    flipBackAndResume(c, true, 4, 5);
+  } else {
+    flipBackAndResume(c, growth, prevStage, newStage);
+  }
+  setTimeout(function(){
+    if (complete) showCompletedState(c);
+    else drawNextQuestion(c);
+  }, FLIP_MS);
+  if (growth) showToast(STRINGS.toastGrowth[Echo.lang]);
+  if (growth){
+    /* Defer the network write so it doesn't compete for bandwidth with the
+       idle-video preload kicked off just above — that preload is what has
+       to win the race for a smooth growth-transition handoff. */
+    setTimeout(function(){ insertAnswer(c, qid, note); }, 1200);
+  } else {
+    insertAnswer(c, qid, note);
+  }
+}
+
+var noteEditQuestion = null;
+var noteEditIsHistoryEdit = false;
+
+function onEditNote(){
+  var c = Echo.current;
+  if (!c || !c.flipped || !Echo.currentQuestion) return;
+  noteEditQuestion = Echo.currentQuestion;
+  noteEditIsHistoryEdit = false;
+  els.noteText.value = c.notes[String(noteEditQuestion.i)] || '';
+  els.noteModal.classList.add('show');
+}
+
+function openNoteEditorFor(question){
+  var c = Echo.current;
+  if (!c || !question) return;
+  noteEditQuestion = question;
+  noteEditIsHistoryEdit = true;
+  els.noteText.value = c.notes[String(question.i)] || '';
+  els.noteModal.classList.add('show');
+}
+
+function saveNote(){
+  var c = Echo.current;
+  if (c && noteEditQuestion){
+    var key = String(noteEditQuestion.i);
+    var val = els.noteText.value.trim();
+    if (val) c.notes[key] = val;
+    else delete c.notes[key];
+    if (noteEditIsHistoryEdit){
+      /* editing a past, already-asked question: history is append-only,
+         so this persists as a fresh 'asked' row with the corrected note
+         rather than mutating the earlier row. */
+      insertAnswer(c, noteEditQuestion.i, val || null);
+    }
+  }
+  closeNoteModal();
+  if (Echo.screen === 'notes') renderNotesList();
+}
+
+function closeNoteModal(){
+  els.noteModal.classList.remove('show');
+  noteEditQuestion = null;
+  noteEditIsHistoryEdit = false;
+}
+
+/* ===== Dialog menu ===== */
+function openDrawMenu(){
+  els.drawMenuModal.classList.add('show');
+}
+
+function closeDrawMenu(){
+  els.drawMenuModal.classList.remove('show');
+}
+
+/* ===== Notes list ===== */
+function noteItemsFor(c){
+  var items = [];
+  for (var key in c.notes){
+    if (!Object.prototype.hasOwnProperty.call(c.notes, key)) continue;
+    items.push({ question: findQuestionById(key), text: c.notes[key] });
+  }
+  return items;
+}
+
+function renderNotesList(){
+  var c = Echo.current;
+  var wrap = els.notesList;
+  wrap.innerHTML = '';
+  var items = c ? noteItemsFor(c) : [];
+  if (!items.length){
+    wrap.classList.add('empty');
+    var title = document.createElement('p');
+    title.className = 'notes-empty-title';
+    title.textContent = STRINGS.notesEmptyTitle[Echo.lang];
+    var subtitle = document.createElement('p');
+    subtitle.className = 'notes-empty-subtitle';
+    subtitle.textContent = STRINGS.notesEmptySubtitle[Echo.lang];
+    wrap.appendChild(title);
+    wrap.appendChild(subtitle);
+    return;
+  }
+  wrap.classList.remove('empty');
+  items.forEach(function(item){
+    var div = document.createElement('div');
+    div.className = 'note-item';
+    var questionLabel = item.question ? qText(item.question) : '';
+    div.innerHTML =
+      '<div class="note-item-question">' + escapeHtml(questionLabel) + '</div>' +
+      '<div class="note-item-text">' + escapeHtml(item.text) + '</div>';
+    div.addEventListener('click', function(){ openNoteEditorFor(item.question); });
+    wrap.appendChild(div);
+  });
+}
+
+function goNotes(){
+  if (!Echo.current) return;
+  clearTimeout(growthTimer);
+  els.drawVideo.onended = null;
+  els.drawVideo.pause();
+  els.notesCircleName.textContent = Echo.current.name;
+  renderNotesList();
+  showScreen('notes');
+}
+
+function backFromNotes(){
+  var c = Echo.current;
+  showScreen('draw');
+  if (c) startIdleCycle(els.drawVideo, c);
+}
+
+/* ===== Wire up events ===== */
+function bindEvents(){
+  els.btnAuthMagicLink.addEventListener('click', sendMagicLink);
+  els.btnAuthGoogle.addEventListener('click', signInWithGoogle);
+  els.authEmail.addEventListener('input', function(){
+    els.authEmailError.classList.remove('show');
+    els.authEmail.style.borderColor = '';
+    els.authStatusText.textContent = '';
+  });
+  els.authEmail.addEventListener('keydown', function(e){
+    if (e.key === 'Enter') sendMagicLink();
+  });
+  els.btnSignOut.addEventListener('click', signOut);
+
+  els.btnFabCreate.addEventListener('click', goNewCircle);
+  els.btnBackToCircles.addEventListener('click', goCircles);
+  els.btnBackToCircles2.addEventListener('click', goCircles);
+  els.btnCreateCircle.addEventListener('click', onCreateCircle);
+
+  var langToggles = document.querySelectorAll('.lang-toggle');
+  for (var t = 0; t < langToggles.length; t++){
+    langToggles[t].addEventListener('click', toggleLang);
+  }
+
+  var muteToggles = document.querySelectorAll('.mute-toggle');
+  for (var m = 0; m < muteToggles.length; m++){
+    muteToggles[m].addEventListener('click', toggleMute);
+  }
+
+  els.inputName.addEventListener('input', function(){
+    els.nameError.classList.remove('show');
+    els.inputName.style.borderColor = '';
+  });
+  els.inputName.addEventListener('keydown', function(e){
+    if (e.key === 'Enter') onCreateCircle();
+  });
+
+  els.optionList.addEventListener('click', function(e){
+    var card = e.target.closest('.option-card');
+    if (!card) return;
+    var cards = els.optionList.querySelectorAll('.option-card');
+    for (var i = 0; i < cards.length; i++) cards[i].classList.remove('selected');
+    card.classList.add('selected');
+    Echo.selectedCategory = card.getAttribute('data-category');
+  });
+
+  els.drawCard.addEventListener('click', flipToBack);
+  els.btnSkip.addEventListener('click', onSkip);
+  els.btnAnswered.addEventListener('click', onAnswered);
+  els.btnViewNotesComplete.addEventListener('click', goNotes);
+  els.btnEditNote.addEventListener('click', function(e){ e.stopPropagation(); onEditNote(); });
+
+  els.btnNoteSave.addEventListener('click', saveNote);
+  els.btnNoteClose.addEventListener('click', closeNoteModal);
+
+  els.btnDrawMenu.addEventListener('click', openDrawMenu);
+  els.btnMenuClose.addEventListener('click', closeDrawMenu);
+  els.btnMenuNotes.addEventListener('click', function(){ closeDrawMenu(); goNotes(); });
+  els.btnMenuLang.addEventListener('click', function(){ closeDrawMenu(); toggleLang(); });
+  els.btnMenuDelete.addEventListener('click', function(){
+    closeDrawMenu();
+    if (Echo.current) openDeleteModal(Echo.current);
+  });
+  els.btnBackToDraw.addEventListener('click', backFromNotes);
+
+  els.btnDeleteClose.addEventListener('click', closeDeleteModal);
+  els.btnDeleteCancel.addEventListener('click', closeDeleteModal);
+  els.btnDeleteConfirm.addEventListener('click', doDeleteCircle);
+}
+
+function init(){
+  cacheEls();
+  buildIcons();
+  bindEvents();
+  applyI18n();
+  els.authMascot.innerHTML = '<img src="' + AUTH_MASCOT_IMAGE + '" alt="Іскрик">';
+  showScreen('splash');
+  loadSupabase();
+  setTimeout(function(){
+    splashTimerDone = true;
+    maybeLeaveSplash();
+  }, SPLASH_MS);
+}
+
+if (document.readyState === 'loading'){
+  document.addEventListener('DOMContentLoaded', init);
+} else {
+  init();
+}
+
+})();
+</script>
+</body>
+</html>

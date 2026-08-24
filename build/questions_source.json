@@ -1,0 +1,904 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "stage": "getting_to_know",
+      "uk": "Яку найбільшу дурницю ти зробив/ла в житті?",
+      "en": "What's the biggest foolish thing you've ever done in your life?"
+    },
+    {
+      "id": 2,
+      "stage": "getting_to_know",
+      "uk": "Чого ти боїшся найбільше?",
+      "en": "What are you most afraid of?"
+    },
+    {
+      "id": 3,
+      "stage": "getting_to_know",
+      "uk": "Що завдало тобі найбільший біль? Як ти з цим впорався/лася?",
+      "en": "What has caused you the greatest pain? How did you cope with it?"
+    },
+    {
+      "id": 4,
+      "stage": "getting_to_know",
+      "uk": "Чи потрібно тобі бути наодинці з собою? Як часто?",
+      "en": "Do you need time alone with yourself? How often?"
+    },
+    {
+      "id": 5,
+      "stage": "getting_to_know",
+      "uk": "Як ти відчуваєш, що тебе люблять, що про тебе піклуються? Через які дії?",
+      "en": "How do you feel loved and cared for? Through what actions?"
+    },
+    {
+      "id": 6,
+      "stage": "getting_to_know",
+      "uk": "Ти ревнива людина? Чи вважаєш ти, що ревнощі є ознакою недовіри?",
+      "en": "Are you a jealous person? Do you think jealousy is a sign of distrust?"
+    },
+    {
+      "id": 7,
+      "stage": "getting_to_know",
+      "uk": "Як ти ставишся до того, щоб ділитися особистим життям в соцмережах?",
+      "en": "How do you feel about sharing your personal life on social media?"
+    },
+    {
+      "id": 8,
+      "stage": "getting_to_know",
+      "uk": "Чи є щось таке, чого ти і досі не можеш собі дозволити, хоча маєш таку нагоду?",
+      "en": "Is there something you still can't allow yourself, even though you have the chance?"
+    },
+    {
+      "id": 9,
+      "stage": "getting_to_know",
+      "uk": "Що у стосунках твоїх батьків тобі подобається і хотілося б запозичити, а що не подобається?",
+      "en": "What do you like about your parents' relationship that you'd want to borrow, and what don't you like?"
+    },
+    {
+      "id": 10,
+      "stage": "getting_to_know",
+      "uk": "Чи важливо тобі знати про мій досвід минулих стосунків?",
+      "en": "Is it important for you to know about my past relationship experience?"
+    },
+    {
+      "id": 11,
+      "stage": "getting_to_know",
+      "uk": "Чи правда, що найміцніші стосунки виростають з дружби?",
+      "en": "Is it true that the strongest relationships grow out of friendship?"
+    },
+    {
+      "id": 12,
+      "stage": "relationship",
+      "uk": "Які риси характеру ти найбільше цінуєш у мені?",
+      "en": "Which character traits do you value most in me?"
+    },
+    {
+      "id": 13,
+      "stage": "relationship",
+      "uk": "Яку звичку ти в мене перейняв/ла? А яку ще б хотів/ла?",
+      "en": "Which habit did you pick up from me? Which other one would you like to?"
+    },
+    {
+      "id": 14,
+      "stage": "relationship",
+      "uk": "Яким словом ти б описав/ла мене в день нашого знайомства і яке слово найкраще описує мене зараз?",
+      "en": "What word would describe me on the day we met, and what word best describes me now?"
+    },
+    {
+      "id": 15,
+      "stage": "relationship",
+      "uk": "Чи є в нас, як у пари, погана звичка? Ти б хотів/ла її позбутися?",
+      "en": "Do we have a bad habit as a couple? Would you like to get rid of it?"
+    },
+    {
+      "id": 16,
+      "stage": "relationship",
+      "uk": "Яка відмінність між нами тобі подобається найбільше?",
+      "en": "Which difference between us do you like the most?"
+    },
+    {
+      "id": 17,
+      "stage": "relationship",
+      "uk": "За що ти мене покохав/ла?",
+      "en": "What made you fall in love with me?"
+    },
+    {
+      "id": 18,
+      "stage": "relationship",
+      "uk": "Коли ми лише познайомилися, кому найпершому ти розповів про це? Чому?",
+      "en": "When we first met, who was the first person you told about it? Why?"
+    },
+    {
+      "id": 19,
+      "stage": "relationship",
+      "uk": "Яка частина мого тіла тобі найбільше подобається?",
+      "en": "Which part of my body do you like the most?"
+    },
+    {
+      "id": 20,
+      "stage": "relationship",
+      "uk": "На які теми тобі складно говорити зі мною?",
+      "en": "What topics is it hard for you to talk to me about?"
+    },
+    {
+      "id": 21,
+      "stage": "relationship",
+      "uk": "Що ти можеш зробити зараз у наших стосунках, чого не міг/могла зробити на їхньому початку?",
+      "en": "What can you do now in our relationship that you couldn't do at the start?"
+    },
+    {
+      "id": 22,
+      "stage": "relationship",
+      "uk": "Яка риса характеру тобі найбільше подобається в мені? А яка відштовхує?",
+      "en": "Which character trait do you like most in me? Which one pushes you away?"
+    },
+    {
+      "id": 23,
+      "stage": "relationship",
+      "uk": "Яку б пораду ти дав/ла нам на початку стосунків?",
+      "en": "What advice would you give us at the start of our relationship?"
+    },
+    {
+      "id": 24,
+      "stage": "getting_to_know",
+      "uk": "Витрачати, відкладати, економити: вибери своє ставлення до грошей та обґрунтуй вибір.",
+      "en": "Spend, save, or invest: choose your attitude toward money and explain your choice."
+    },
+    {
+      "id": 25,
+      "stage": "getting_to_know",
+      "uk": "Який життєвий урок ти б хотів/ла отримати раніше?",
+      "en": "What life lesson would you have liked to learn earlier?"
+    },
+    {
+      "id": 26,
+      "stage": "getting_to_know",
+      "uk": "Що вибереш: спільна ковдра чи дві різні?",
+      "en": "Which would you choose: one shared blanket or two separate ones?"
+    },
+    {
+      "id": 27,
+      "stage": "relationship",
+      "uk": "Як ти ставишся до моїх батьків?",
+      "en": "How do you feel about my parents?"
+    },
+    {
+      "id": 28,
+      "stage": "getting_to_know",
+      "uk": "Що романтично саме для тебе: назви щонайменше 5 проявів романтики.",
+      "en": "What's romantic to you specifically: name at least 5 expressions of romance."
+    },
+    {
+      "id": 29,
+      "stage": "getting_to_know",
+      "uk": "Що для тебе неприйнятно в стосунках?",
+      "en": "What's unacceptable to you in a relationship?"
+    },
+    {
+      "id": 30,
+      "stage": "relationship",
+      "uk": "Яка риса характеру є в мені, але рідко зустрічається в інших людях?",
+      "en": "What character trait do I have that's rare in other people?"
+    },
+    {
+      "id": 31,
+      "stage": "getting_to_know",
+      "uk": "Чи віриш ти, що люди можуть бути створені одне для одного чи все у світі більш прагматично?",
+      "en": "Do you believe people can be made for each other, or is everything more pragmatic?"
+    },
+    {
+      "id": 32,
+      "stage": "getting_to_know",
+      "uk": "Що вибереш: спати в піжамах або голяка?",
+      "en": "Which would you choose: sleeping in pajamas or naked?"
+    },
+    {
+      "id": 33,
+      "stage": "getting_to_know",
+      "uk": "Через скільки часу в стосунках варто робити пропозицію?",
+      "en": "How long into a relationship should someone propose?"
+    },
+    {
+      "id": 34,
+      "stage": "relationship",
+      "uk": "Чи є щось, щоб ти хотів/ла прожити саме зі мною?",
+      "en": "Is there something you'd want to experience specifically with me?"
+    },
+    {
+      "id": 35,
+      "stage": "getting_to_know",
+      "uk": "Як тобі здається, ти можеш відчувати настрій інших людей?",
+      "en": "Do you feel like you can sense other people's moods?"
+    },
+    {
+      "id": 36,
+      "stage": "getting_to_know",
+      "uk": "Які критерії міцних стосунків ти виокремлюєш для себе?",
+      "en": "What criteria define a strong relationship for you?"
+    },
+    {
+      "id": 37,
+      "stage": "getting_to_know",
+      "uk": "Тобі подобається людина, якою ти є зараз?",
+      "en": "Do you like the person you are right now?"
+    },
+    {
+      "id": 38,
+      "stage": "getting_to_know",
+      "uk": "Продовж речення: «Я б хотів/ла отримувати від тебе вітання на такі свята…». Чому тобі це важливо?",
+      "en": "Finish the sentence: \"I'd like to get greetings from you on these holidays…\" Why does this matter to you?"
+    },
+    {
+      "id": 39,
+      "stage": "relationship",
+      "uk": "Назви 3 речі, у чому ми максимально схожі!",
+      "en": "Name 3 things we're most alike in!"
+    },
+    {
+      "id": 40,
+      "stage": "getting_to_know",
+      "uk": "Що для тебе дім?",
+      "en": "What does 'home' mean to you?"
+    },
+    {
+      "id": 41,
+      "stage": "getting_to_know",
+      "uk": "Чого тобі бракує в житті зараз? Чи можу я це виправити?",
+      "en": "What's missing in your life right now? Can I fix that?"
+    },
+    {
+      "id": 42,
+      "stage": "getting_to_know",
+      "uk": "Чи варто робити подарунки без причини? Чому?",
+      "en": "Should gifts be given without a reason? Why?"
+    },
+    {
+      "id": 43,
+      "stage": "relationship",
+      "uk": "Над чим у наших стосунках ми маємо працювати більше?",
+      "en": "What should we work on more in our relationship?"
+    },
+    {
+      "id": 44,
+      "stage": "relationship",
+      "uk": "Що б ти хотів/ла, щоб я сприймав/ла простіше?",
+      "en": "What would you like me to take more lightly?"
+    },
+    {
+      "id": 45,
+      "stage": "getting_to_know",
+      "uk": "Уяви, що ти маєш можливість змінити одну подію минулого у твоєму житті — що б це була за подія? Як би ти її змінив/ла?",
+      "en": "Imagine you could change one event from your past — what would it be, and how would you change it?"
+    },
+    {
+      "id": 46,
+      "stage": "relationship",
+      "uk": "Пам'ятаєш наше перше побачення? А пам'ятаєш, що розповідав/ла друзям після нього?",
+      "en": "Do you remember our first date? Do you remember what you told your friends about it afterward?"
+    },
+    {
+      "id": 47,
+      "stage": "getting_to_know",
+      "uk": "Чи можна залишитися друзями після закінчення стосунків?",
+      "en": "Can people stay friends after a relationship ends?"
+    },
+    {
+      "id": 48,
+      "stage": "getting_to_know",
+      "uk": "Чи вважаєш ти, що статеве виховання у підлітковому віці — це важливо? У тебе воно було?",
+      "en": "Do you think sex education in the teenage years is important? Did you have it?"
+    },
+    {
+      "id": 49,
+      "stage": "getting_to_know",
+      "uk": "Що для тебе здорові стосунки? У нас такі?",
+      "en": "What does a healthy relationship mean to you? Do we have one?"
+    },
+    {
+      "id": 50,
+      "stage": "relationship",
+      "uk": "Щоб ти хотів/ла, щоб я ніколи не забував/ла?",
+      "en": "What do you want me to never forget?"
+    },
+    {
+      "id": 51,
+      "stage": "getting_to_know",
+      "uk": "Які риси в собі ти любиш, а які риси ти б хотів/ла змінити?",
+      "en": "What traits in yourself do you love, and which would you like to change?"
+    },
+    {
+      "id": 52,
+      "stage": "getting_to_know",
+      "uk": "Як мені реагувати на твою злість?",
+      "en": "How should I react to your anger?"
+    },
+    {
+      "id": 53,
+      "stage": "getting_to_know",
+      "uk": "Які твої переконання та стереотипи заважають тобі найбільше?",
+      "en": "Which of your beliefs and stereotypes get in your way the most?"
+    },
+    {
+      "id": 54,
+      "stage": "getting_to_know",
+      "uk": "Що для тебе аб'юзивні стосунки?",
+      "en": "What does an abusive relationship mean to you?"
+    },
+    {
+      "id": 55,
+      "stage": "getting_to_know",
+      "uk": "Яка риса характеру в інших людях тебе відштовхує?",
+      "en": "What character trait in other people pushes you away?"
+    },
+    {
+      "id": 56,
+      "stage": "getting_to_know",
+      "uk": "Чи є людина, яку б ти ніколи не хотів/ла бачити у своєму житті? Чому?",
+      "en": "Is there a person you never want to see in your life again? Why?"
+    },
+    {
+      "id": 57,
+      "stage": "getting_to_know",
+      "uk": "Чого ти не зробиш ні за які гроші?",
+      "en": "What would you never do for any amount of money?"
+    },
+    {
+      "id": 58,
+      "stage": "getting_to_know",
+      "uk": "Якщо ти спонтанно приймеш рішення сісти на дієту, зайнятися спортом, відмовитися від алкоголю і т. д., яку поведінку від мене ти очікуєш?",
+      "en": "If you suddenly decided to diet, start exercising, quit drinking, etc., what behavior would you expect from me?"
+    },
+    {
+      "id": 59,
+      "stage": "getting_to_know",
+      "uk": "Розкажи про твоє найулюбленіше місце у місті/селищі, де ми зараз перебуваємо.",
+      "en": "Tell me about your favorite place in the city/town where we currently are."
+    },
+    {
+      "id": 60,
+      "stage": "getting_to_know",
+      "uk": "Що робить тебе щасливим/ою? Назви мінімум 5 речей!",
+      "en": "What makes you happy? Name at least 5 things!"
+    },
+    {
+      "id": 61,
+      "stage": "getting_to_know",
+      "uk": "Що б ти хотів/ла змінити у своєму житті?",
+      "en": "What would you like to change about your life?"
+    },
+    {
+      "id": 62,
+      "stage": "relationship",
+      "uk": "Якими рутинними справами ти б хотів/ла, щоб ми займалися вдвох? А якими хобі?",
+      "en": "Which everyday tasks would you like us to do together? Which hobbies?"
+    },
+    {
+      "id": 63,
+      "stage": "getting_to_know",
+      "uk": "Ти приховуєш іноді свої емоції? Чому?",
+      "en": "Do you sometimes hide your emotions? Why?"
+    },
+    {
+      "id": 64,
+      "stage": "getting_to_know",
+      "uk": "Чи є відчуття, за яким ти сумуєш зараз найбільше?",
+      "en": "Is there a feeling you miss the most right now?"
+    },
+    {
+      "id": 65,
+      "stage": "getting_to_know",
+      "uk": "Як поділити домашні обов'язки? Опиши свою ідеальну формулу.",
+      "en": "How should household duties be split? Describe your ideal formula."
+    },
+    {
+      "id": 66,
+      "stage": "getting_to_know",
+      "uk": "Що для тебе «час разом»?",
+      "en": "What does 'time together' mean to you?"
+    },
+    {
+      "id": 67,
+      "stage": "getting_to_know",
+      "uk": "Які твої особисті потреби та бажання в стосунках, про які я маю знати?",
+      "en": "What personal needs and desires in the relationship should I know about?"
+    },
+    {
+      "id": 68,
+      "stage": "getting_to_know",
+      "uk": "Чи є в тебе якісь психологічні захисти в стресових ситуаціях? Як мені варто/не варто поводитись у таких випадках?",
+      "en": "Do you have any psychological defenses in stressful situations? How should or shouldn't I act in those cases?"
+    },
+    {
+      "id": 69,
+      "stage": "getting_to_know",
+      "uk": "Закордоном тато в декреті — це звичайна справа. Як гадаєш, чи можливо це в нашій парі?",
+      "en": "Abroad, a stay-at-home dad on parental leave is common. Do you think that could work for us as a couple?"
+    },
+    {
+      "id": 70,
+      "stage": "getting_to_know",
+      "uk": "Яким ти бачиш сімейний бюджет та його розподіл? Розкажи про ідеальну фінансову модель у стосунках.",
+      "en": "How do you picture the family budget and its distribution? Describe an ideal financial model for a relationship."
+    },
+    {
+      "id": 71,
+      "stage": "getting_to_know",
+      "uk": "Що для тебе є зрадою?",
+      "en": "What counts as betrayal to you?"
+    },
+    {
+      "id": 72,
+      "stage": "getting_to_know",
+      "uk": "Як зрозуміти, що ти закоханий/а?",
+      "en": "How do you know you're in love?"
+    },
+    {
+      "id": 73,
+      "stage": "relationship",
+      "uk": "Тобі комфортно говорити зі мною про інтимні речі?",
+      "en": "Are you comfortable talking to me about intimate things?"
+    },
+    {
+      "id": 74,
+      "stage": "relationship",
+      "uk": "Коли ти зрозумів/ла, що закохався/лась у мене?",
+      "en": "When did you realize you'd fallen in love with me?"
+    },
+    {
+      "id": 75,
+      "stage": "relationship",
+      "uk": "В які моменти я виглядаю мило у твоїх очах?",
+      "en": "In what moments do I look cute to you?"
+    },
+    {
+      "id": 76,
+      "stage": "getting_to_know",
+      "uk": "Назви 5 причин, чому ти пишаєшся собою.",
+      "en": "Name 5 reasons you're proud of yourself."
+    },
+    {
+      "id": 77,
+      "stage": "getting_to_know",
+      "uk": "Назви дрібницю, яку я можу робити щодня, щоб тішити тебе.",
+      "en": "Name a small thing I can do every day to make you happy."
+    },
+    {
+      "id": 78,
+      "stage": "relationship",
+      "uk": "Які мої звички тобі не подобаються?",
+      "en": "Which of my habits do you dislike?"
+    },
+    {
+      "id": 79,
+      "stage": "getting_to_know",
+      "uk": "Уяви: тобі подарували 10000$, які ти можеш витратити лише на нашу пару. Що купиш?",
+      "en": "Imagine you were given $10,000 that you could only spend on us as a couple. What would you buy?"
+    },
+    {
+      "id": 80,
+      "stage": "relationship",
+      "uk": "Хто перший освідчився? Згадай, як це було!",
+      "en": "Who proposed first? Tell me how it happened!"
+    },
+    {
+      "id": 81,
+      "stage": "getting_to_know",
+      "uk": "Які родинні традиції хотілося б перенести у нашу пару? Які нові створити?",
+      "en": "Which family traditions would you like to bring into our relationship? Which new ones would you like to create?"
+    },
+    {
+      "id": 82,
+      "stage": "relationship",
+      "uk": "Якщо я втрачу пам'ять, то який найперший факт/історію ти розкажеш мені про мене? А про нас?",
+      "en": "If I lost my memory, what's the first fact or story you'd tell me about myself? And about us?"
+    },
+    {
+      "id": 83,
+      "stage": "relationship",
+      "uk": "Які слова тебе дуже ранили, але ти зробив/ла вигляд, що все ок? Чому?",
+      "en": "What words hurt you deeply, but you pretended everything was fine? Why?"
+    },
+    {
+      "id": 84,
+      "stage": "relationship",
+      "uk": "Який наш спільний спогад ти б хотів/ла пережити ще раз?",
+      "en": "Which shared memory of ours would you like to relive?"
+    },
+    {
+      "id": 85,
+      "stage": "getting_to_know",
+      "uk": "Що з того, чим ти зараз займаєшся (хобі/робота), ти б хотів/ла робити і через 5 років?",
+      "en": "Of what you're currently doing (hobby/work), what would you still like to be doing in 5 years?"
+    },
+    {
+      "id": 86,
+      "stage": "relationship",
+      "uk": "Чи легко було б нам працювати разом над спільною справою? Якщо вже маємо такий досвід, то поділися 2 позитивними та 2 негативними речами.",
+      "en": "Would it be easy for us to work together on something? If we already have that experience, share 2 positive and 2 negative things about it."
+    },
+    {
+      "id": 87,
+      "stage": "getting_to_know",
+      "uk": "Якщо кохання живе 3 роки, то що потім? Куди воно дівається?",
+      "en": "If love only lasts 3 years, what happens after that? Where does it go?"
+    },
+    {
+      "id": 88,
+      "stage": "getting_to_know",
+      "uk": "Як ти ставишся до прояву почуттів на публіці: гарячі поцілунки в метро, пристрасні обійми на лавці в парку, гучні з'ясування стосунків у закладі?",
+      "en": "How do you feel about public displays of affection: passionate kisses on the subway, hugging on a park bench, loud arguments in public?"
+    },
+    {
+      "id": 89,
+      "stage": "relationship",
+      "uk": "В які моменти ти пишаєшся мною?",
+      "en": "In what moments are you proud of me?"
+    },
+    {
+      "id": 90,
+      "stage": "relationship",
+      "uk": "Продовж речення: «Ми найчастіше сваримося через те, що…». Назви 3 найчастіші причини сварок і 3 рішення, які допоможуть їх уникати.",
+      "en": "Finish the sentence: \"We argue most often because…\" Name 3 common reasons for our arguments and 3 solutions to help avoid them."
+    },
+    {
+      "id": 91,
+      "stage": "relationship",
+      "uk": "Продовж речення: «Я ніколи не забуду, як ми…».",
+      "en": "Finish the sentence: \"I'll never forget how we…\""
+    },
+    {
+      "id": 92,
+      "stage": "getting_to_know",
+      "uk": "Чи хотів/ла би ти спільну фотосесію? В якому стилі?",
+      "en": "Would you like to do a couple's photoshoot together? In what style?"
+    },
+    {
+      "id": 93,
+      "stage": "relationship",
+      "uk": "Перевірка на уважність: назви мою улюблену страву.",
+      "en": "Attention check: name my favorite dish."
+    },
+    {
+      "id": 94,
+      "stage": "getting_to_know",
+      "uk": "Партнерські пологи: назви свої «за» та «проти». Ти б хотів/ла мати такі в нашій парі? Чому?",
+      "en": "Partner-present childbirth: name your pros and cons. Would you want that for us? Why?"
+    },
+    {
+      "id": 95,
+      "stage": "getting_to_know",
+      "uk": "Чи потрібно змінюватися в стосунках?",
+      "en": "Do people need to change in a relationship?"
+    },
+    {
+      "id": 96,
+      "stage": "relationship",
+      "uk": "У чому сила наших стосунків?",
+      "en": "What is the strength of our relationship?"
+    },
+    {
+      "id": 97,
+      "stage": "relationship",
+      "uk": "Назви 3 лагідних прізвиська, якими я тебе називаю і вони тобі подобаються. Чи є ті, які не подобаються?",
+      "en": "Name 3 affectionate nicknames I call you that you like. Are there any you don't like?"
+    },
+    {
+      "id": 98,
+      "stage": "relationship",
+      "uk": "Назви 3 речі, які змінилися в тобі за час наших стосунків.",
+      "en": "Name 3 things that have changed in you since we've been together."
+    },
+    {
+      "id": 99,
+      "stage": "relationship",
+      "uk": "Назви свої найулюбленіші види нашого спільного дозвілля.",
+      "en": "Name your favorite ways we spend leisure time together."
+    },
+    {
+      "id": 100,
+      "stage": "relationship",
+      "uk": "Що ти досі не можеш зрозуміти в мені?",
+      "en": "What can't you still understand about me?"
+    },
+    {
+      "id": 101,
+      "stage": "relationship",
+      "uk": "Якби тобі сказали, що ти схожий/а на мене — тобі було б приємно?",
+      "en": "If someone told you that you resemble me, would that please you?"
+    },
+    {
+      "id": 102,
+      "stage": "relationship",
+      "uk": "Хто витрачає більше грошей у нашій парі?",
+      "en": "Who spends more money in our relationship?"
+    },
+    {
+      "id": 103,
+      "stage": "relationship",
+      "uk": "Чи є щось, що ти дуже хотів/ла б, але ніколи мене про це не просив/ла?",
+      "en": "Is there something you really want but never asked me for?"
+    },
+    {
+      "id": 104,
+      "stage": "getting_to_know",
+      "uk": "Про що ти подумав/ла, коли ми вперше побачилися?",
+      "en": "What did you think when we first saw each other?"
+    },
+    {
+      "id": 105,
+      "stage": "relationship",
+      "uk": "Чи є речі/ситуації, які тебе турбують, але я про це не знаю?",
+      "en": "Are there things or situations bothering you that I don't know about?"
+    },
+    {
+      "id": 106,
+      "stage": "relationship",
+      "uk": "Які наші спільні спогади ти згадуєш зі сміхом?",
+      "en": "Which shared memories of ours make you laugh when you think of them?"
+    },
+    {
+      "id": 107,
+      "stage": "relationship",
+      "uk": "Хто перший поцілував? Пам'ятаєш твої думки в цей момент?",
+      "en": "Who kissed first? Do you remember your thoughts at that moment?"
+    },
+    {
+      "id": 108,
+      "stage": "relationship",
+      "uk": "Як ти ставишся до моїх друзів? Поясни, чому так?",
+      "en": "How do you feel about my friends? Explain why."
+    },
+    {
+      "id": 109,
+      "stage": "getting_to_know",
+      "uk": "Які речі зі свого дитинства ти б хотів/ла покращити для своєї дитини в майбутньому?",
+      "en": "What things from your own childhood would you like to improve for your future child?"
+    },
+    {
+      "id": 110,
+      "stage": "getting_to_know",
+      "uk": "Якби у тебе була можливість дізнатися відповідь на одне запитання про минуле або майбутнє — що б ти запитав/ла?",
+      "en": "If you could learn the answer to one question about the past or future, what would you ask?"
+    },
+    {
+      "id": 111,
+      "stage": "relationship",
+      "uk": "Коли мене немає поряд, що тобі нагадує про мене?",
+      "en": "When I'm not around, what reminds you of me?"
+    },
+    {
+      "id": 112,
+      "stage": "getting_to_know",
+      "uk": "Що насамперед ти помічаєш в інших людях? Чому саме так? Що ти спершу помітив/ла в мені?",
+      "en": "What do you notice about people first, and why? What did you first notice about me?"
+    },
+    {
+      "id": 113,
+      "stage": "relationship",
+      "uk": "Чого тобі бракує в наших стосунках?",
+      "en": "What do you feel is missing in our relationship?"
+    },
+    {
+      "id": 114,
+      "stage": "getting_to_know",
+      "uk": "Що вибереш: масштабне велике весілля чи маленьке сімейне свято?",
+      "en": "Which would you choose: a big lavish wedding or a small family celebration?"
+    },
+    {
+      "id": 115,
+      "stage": "getting_to_know",
+      "uk": "Як ти реагуєш на власні невдачі та поразки?",
+      "en": "How do you react to your own failures and setbacks?"
+    },
+    {
+      "id": 116,
+      "stage": "getting_to_know",
+      "uk": "Поділися своєю найкращою і найдурнішою мрією!",
+      "en": "Share your best and silliest dream!"
+    },
+    {
+      "id": 117,
+      "stage": "getting_to_know",
+      "uk": "Які прояви уваги в стосунках ти вважаєш важливими?",
+      "en": "Which expressions of attention do you consider important in a relationship?"
+    },
+    {
+      "id": 118,
+      "stage": "relationship",
+      "uk": "Якою ти бачиш нашу старість? Опиши один звичайний день зі старості.",
+      "en": "How do you picture us in old age? Describe an ordinary day of that life."
+    },
+    {
+      "id": 119,
+      "stage": "relationship",
+      "uk": "Якби ти написав/ла книгу про наші стосунки, то як би вона називалася?",
+      "en": "If you wrote a book about our relationship, what would it be called?"
+    },
+    {
+      "id": 120,
+      "stage": "relationship",
+      "uk": "В який момент ти зрозумів/ла, що можеш розповісти мені абсолютно все? Чи такий момент ще не настав?",
+      "en": "When did you realize you could tell me absolutely everything? Or has that moment not come yet?"
+    },
+    {
+      "id": 121,
+      "stage": "getting_to_know",
+      "uk": "Що б сказала твоя маленька версія, коли б побачила тебе зараз?",
+      "en": "What would your younger self say if they saw you now?"
+    },
+    {
+      "id": 122,
+      "stage": "getting_to_know",
+      "uk": "Чи є в тебе така річ, яка має лише для тебе особливе значення?",
+      "en": "Is there something that has special meaning only to you?"
+    },
+    {
+      "id": 123,
+      "stage": "getting_to_know",
+      "uk": "Яку поведінку своїх батьків у дитинстві ти б не хотів/ла повторювати з власними дітьми?",
+      "en": "What behavior of your parents from your childhood would you not want to repeat with your own children?"
+    },
+    {
+      "id": 124,
+      "stage": "getting_to_know",
+      "uk": "Чи можна почуватися вільно, коли є стосунки? Тобі вистачає свободи?",
+      "en": "Can you feel free while in a relationship? Do you have enough freedom?"
+    },
+    {
+      "id": 125,
+      "stage": "getting_to_know",
+      "uk": "Чи потрібно завжди бути відвертим у стосунках або ж є речі, які краще залишити у своїй голові?",
+      "en": "Do you always need to be fully open in a relationship, or are there things better kept to yourself?"
+    },
+    {
+      "id": 126,
+      "stage": "getting_to_know",
+      "uk": "Одруження — це важливо? Що ти вкладаєш у це поняття? Яким ти бачиш наш шлюб у майбутньому?",
+      "en": "Is marriage important? What does it mean to you? How do you picture our marriage in the future?"
+    },
+    {
+      "id": 127,
+      "stage": "getting_to_know",
+      "uk": "Що вибереш: сніданок у ліжко чи готувати його разом на кухні?",
+      "en": "Which would you choose: breakfast in bed or cooking it together in the kitchen?"
+    },
+    {
+      "id": 128,
+      "stage": "getting_to_know",
+      "uk": "Перевіряти телефони та листування одне одного — це порушення особистих кордонів чи норма? Поясни свій вибір.",
+      "en": "Checking each other's phones and messages — is that a boundary violation or normal? Explain your choice."
+    },
+    {
+      "id": 129,
+      "stage": "getting_to_know",
+      "uk": "Уяви, що я беру в тебе інтерв'ю. Якою буде твоя відповідь на запитання: «Що допомогло тобі стати таким/ою, яким/ою ти зараз є?»",
+      "en": "Imagine I'm interviewing you. What's your answer to: \"What helped you become who you are today?\""
+    },
+    {
+      "id": 130,
+      "stage": "getting_to_know",
+      "uk": "Чи віриш ти в сумісність людей за знаком зодіаку? Якщо так, то як реагувати, коли гороскоп каже, що нам разом не судилося?",
+      "en": "Do you believe in zodiac compatibility? If so, how would you react if a horoscope said we're not meant to be together?"
+    },
+    {
+      "id": 131,
+      "stage": "getting_to_know",
+      "uk": "Як ти ставишся до шлюбного договору?",
+      "en": "How do you feel about prenuptial agreements?"
+    },
+    {
+      "id": 132,
+      "stage": "relationship",
+      "uk": "Чого б найпершого ти навчив/ла нашу дитину?",
+      "en": "What's the first thing you'd teach our child?"
+    },
+    {
+      "id": 133,
+      "stage": "relationship",
+      "uk": "Які компліменти ти хочеш чути частіше?",
+      "en": "What compliments do you want to hear more often?"
+    },
+    {
+      "id": 134,
+      "stage": "getting_to_know",
+      "uk": "Тобі подобається спільний шопінг чи це дратує? :)",
+      "en": "Do you enjoy shopping together, or does it annoy you? :)"
+    },
+    {
+      "id": 135,
+      "stage": "relationship",
+      "uk": "Чи є в тебе страхи з минулих стосунків, які проявляються в наших?",
+      "en": "Do you have fears from past relationships that show up in ours?"
+    },
+    {
+      "id": 136,
+      "stage": "getting_to_know",
+      "uk": "Коли ти відчуваєш себе в безпеці?",
+      "en": "When do you feel safe?"
+    },
+    {
+      "id": 137,
+      "stage": "getting_to_know",
+      "uk": "Що руйнує кохання? Назви 3 найчастіші причини розриву стосунків, на твій погляд.",
+      "en": "What destroys love? Name 3 of the most common reasons relationships end, in your opinion."
+    },
+    {
+      "id": 138,
+      "stage": "getting_to_know",
+      "uk": "Ти віддаєш перевагу нікому не розповідати про свої плани, думки та переживання чи навпаки ділитися про це зі всім світом?",
+      "en": "Do you prefer keeping your plans, thoughts, and feelings to yourself, or sharing them with everyone?"
+    },
+    {
+      "id": 139,
+      "stage": "getting_to_know",
+      "uk": "Про що найбільше шкодуєш?",
+      "en": "What do you regret the most?"
+    },
+    {
+      "id": 140,
+      "stage": "getting_to_know",
+      "uk": "Що б ти змінив/ла у своєму вихованні?",
+      "en": "What would you change about how you were raised?"
+    },
+    {
+      "id": 141,
+      "stage": "getting_to_know",
+      "uk": "Уяви, що тобі потрібно дати інструкцію щодо того, як тебе любити, але там усього 5 пунктів. Назви їх.",
+      "en": "Imagine you had to give instructions on how to love you, but only 5 points. Name them."
+    },
+    {
+      "id": 142,
+      "stage": "getting_to_know",
+      "uk": "Якщо в стосунках криза, ти готовий/а разом йти до психолога чи будеш вирішувати все самотужки?",
+      "en": "If there's a crisis in the relationship, are you willing to see a therapist together, or would you handle it alone?"
+    },
+    {
+      "id": 143,
+      "stage": "getting_to_know",
+      "uk": "Як ти відреагуєш, якщо твоя дитина зізнається в гомосексуальності?",
+      "en": "How would you react if your child came out as gay?"
+    },
+    {
+      "id": 144,
+      "stage": "getting_to_know",
+      "uk": "Є 5 мов кохання: слова заохочення, час, подарунки, допомога та дотики. Яка з них про тебе?",
+      "en": "There are 5 love languages: words of affirmation, quality time, gifts, acts of service, and touch. Which one is you?"
+    },
+    {
+      "id": 145,
+      "stage": "getting_to_know",
+      "uk": "Якщо весь наступний рік ми могли б разом не працювати й займатися чимось для насолоди, що б це було?",
+      "en": "If we could spend the whole next year not working and just enjoying ourselves, what would that be?"
+    },
+    {
+      "id": 146,
+      "stage": "getting_to_know",
+      "uk": "Які в тебе стосунки зі своїми батьками?",
+      "en": "What's your relationship like with your parents?"
+    },
+    {
+      "id": 147,
+      "stage": "getting_to_know",
+      "uk": "Що таке іскра в стосунках? У нас вона є? Що робити, коли вона гасне?",
+      "en": "What is 'the spark' in a relationship? Do we have it? What do we do if it fades?"
+    },
+    {
+      "id": 148,
+      "stage": "getting_to_know",
+      "uk": "Якщо тобі сумно, тебе треба: веселити, вислухати чи дати спокій?",
+      "en": "If you're feeling sad, do you need to be cheered up, listened to, or left alone?"
+    },
+    {
+      "id": 149,
+      "stage": "getting_to_know",
+      "uk": "Як ти вважаєш, давати поради людям про стосунки — це хороша ідея? Чому?",
+      "en": "Do you think giving relationship advice to people is a good idea? Why?"
+    },
+    {
+      "id": 150,
+      "stage": "relationship",
+      "uk": "Чи є у тебе щось (пісня, страва, аромат), що асоціюється зі мною?",
+      "en": "Is there something (a song, dish, scent) that reminds you of me?"
+    }
+  ]
+}
