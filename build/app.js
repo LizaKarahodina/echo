@@ -548,18 +548,10 @@ function startCirclesIdleCycle(video){
 function playTransitionThenIdle(video, c, newStage){
   video.onended = function(){
     video.onended = null;
-    /* Hide the video across the src swap so the viewer never sees the raw
-       cut between the transition clip's last frame and the idle clip's
-       first frame — fade out during the existing pause, fade back in once
-       the new source is already playing. */
-    video.style.opacity = '0';
-    setTimeout(function(){
-      c.growthLevel = newStage;
-      setVideoSrc(video, GROWTH.idle[newStage - 1], GROWTH.images[newStage - 1]);
-      startIdleCycle(video, c);
-      video.style.opacity = '1';
-      if (newStage < 5) preloadVideo(GROWTH.transitions[newStage - 1]);
-    }, 700);
+    c.growthLevel = newStage;
+    setVideoSrc(video, GROWTH.idle[newStage - 1], GROWTH.images[newStage - 1]);
+    startIdleCycle(video, c);
+    if (newStage < 5) preloadVideo(GROWTH.transitions[newStage - 1]);
   };
   var p = video.play();
   if (p && p.catch) p.catch(function(){});

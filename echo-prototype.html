@@ -280,7 +280,7 @@ body{
 }
 .card-edit-btn:hover,.card-edit-btn:active{background:transparent;border:none;}
 .card-edit-btn .icon{width:18px;height:18px;}
-.draw-card-front video{width:72%;max-width:230px;aspect-ratio:1/1;object-fit:contain;transition:opacity .3s ease;}
+.draw-card-front video{width:72%;max-width:230px;aspect-ratio:1/1;object-fit:contain;}
 .draw-card-tagline{font-family:'Pacifico';font-size:18px;color:var(--pink);text-align:center;margin:0;}
 .draw-complete-subtitle{display:none;font-size:16px;line-height:1.5;color:var(--text-secondary);opacity:.7;text-align:center;max-width:260px;margin:0;}
 .draw-question-text{font-family:'Pacifico';font-size:26px;line-height:1.35;color:var(--pink);}
@@ -1168,18 +1168,10 @@ function startCirclesIdleCycle(video){
 function playTransitionThenIdle(video, c, newStage){
   video.onended = function(){
     video.onended = null;
-    /* Hide the video across the src swap so the viewer never sees the raw
-       cut between the transition clip's last frame and the idle clip's
-       first frame — fade out during the existing pause, fade back in once
-       the new source is already playing. */
-    video.style.opacity = '0';
-    setTimeout(function(){
-      c.growthLevel = newStage;
-      setVideoSrc(video, GROWTH.idle[newStage - 1], GROWTH.images[newStage - 1]);
-      startIdleCycle(video, c);
-      video.style.opacity = '1';
-      if (newStage < 5) preloadVideo(GROWTH.transitions[newStage - 1]);
-    }, 700);
+    c.growthLevel = newStage;
+    setVideoSrc(video, GROWTH.idle[newStage - 1], GROWTH.images[newStage - 1]);
+    startIdleCycle(video, c);
+    if (newStage < 5) preloadVideo(GROWTH.transitions[newStage - 1]);
   };
   var p = video.play();
   if (p && p.catch) p.catch(function(){});
