@@ -43,6 +43,10 @@ function isValidEmail(v){
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
 }
 
+function cleanRedirectUrl(){
+  return window.location.origin + window.location.pathname;
+}
+
 function sendMagicLink(){
   var email = els.authEmail.value.trim();
   els.authEmailError.classList.remove('show');
@@ -55,7 +59,7 @@ function sendMagicLink(){
   }
   els.authStatusText.textContent = STRINGS.authSending[Echo.lang];
   loadSupabase().then(function(client){
-    return client.auth.signInWithOtp({ email: email, options: { emailRedirectTo: window.location.href } });
+    return client.auth.signInWithOtp({ email: email, options: { emailRedirectTo: cleanRedirectUrl() } });
   }).then(function(res){
     if (res.error){
       els.authStatusText.textContent = STRINGS.authError[Echo.lang];
@@ -68,7 +72,7 @@ function sendMagicLink(){
 
 function signInWithGoogle(){
   loadSupabase().then(function(client){
-    return client.auth.signInWithOAuth({ provider: 'google', options: { redirectTo: window.location.href } });
+    return client.auth.signInWithOAuth({ provider: 'google', options: { redirectTo: cleanRedirectUrl() } });
   });
 }
 
@@ -157,6 +161,9 @@ function onAuthStateChanged(session){
   var hadSession = !!Echo.session;
   Echo.session = session;
   authResolved = true;
+  if (window.location.hash){
+    history.replaceState(null, '', window.location.pathname + window.location.search);
+  }
   if (!splashTimerDone){
     maybeLeaveSplash();
     return;
