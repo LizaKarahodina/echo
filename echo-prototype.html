@@ -87,6 +87,7 @@ body{
   padding-top:16px;transition:padding-top .25s ease;
 }
 #screen-circles .screen-content.toast-space{padding-top:64px;}
+#screen-circles .screen-content.no-mask{-webkit-mask-image:none;mask-image:none;}
 #screen-circles .screen-content::-webkit-scrollbar{display:block;width:2px;}
 #screen-circles .screen-content::-webkit-scrollbar-track{background:transparent;}
 #screen-circles .screen-content::-webkit-scrollbar-thumb{background:rgba(220,200,214,0.5);border-radius:999px;}
@@ -1337,6 +1338,7 @@ function renderCirclesList(){
     Echo.circles.forEach(function(c){ wrap.appendChild(circleCardEl(c)); });
   }
   els.btnFabCreate.style.display = isEmpty ? 'none' : '';
+  if (els.circlesScreenContent) els.circlesScreenContent.classList.toggle('no-mask', isEmpty);
   els.circlesMascot.style.setProperty('--mascot-scale', mascotScaleFor(Echo.circles.length));
   ensureCirclesMascotVideo();
 }

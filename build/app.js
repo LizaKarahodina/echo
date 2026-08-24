@@ -717,6 +717,7 @@ function renderCirclesList(){
     Echo.circles.forEach(function(c){ wrap.appendChild(circleCardEl(c)); });
   }
   els.btnFabCreate.style.display = isEmpty ? 'none' : '';
+  if (els.circlesScreenContent) els.circlesScreenContent.classList.toggle('no-mask', isEmpty);
   els.circlesMascot.style.setProperty('--mascot-scale', mascotScaleFor(Echo.circles.length));
   ensureCirclesMascotVideo();
 }
