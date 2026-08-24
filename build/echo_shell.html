@@ -83,7 +83,9 @@ body{
   scrollbar-width:thin;scrollbar-color:rgba(220,200,214,0.5) transparent;
   -webkit-mask-image:linear-gradient(to bottom, transparent 0, #000 16px, #000 calc(100% - 16px), transparent 100%);
   mask-image:linear-gradient(to bottom, transparent 0, #000 16px, #000 calc(100% - 16px), transparent 100%);
+  padding-top:16px;transition:padding-top .25s ease;
 }
+#screen-circles .screen-content.toast-space{padding-top:64px;}
 #screen-circles .screen-content::-webkit-scrollbar{display:block;width:2px;}
 #screen-circles .screen-content::-webkit-scrollbar-track{background:transparent;}
 #screen-circles .screen-content::-webkit-scrollbar-thumb{background:rgba(220,200,214,0.5);border-radius:999px;}
@@ -370,7 +372,7 @@ body{
   opacity:0;transition:opacity .3s, transform .3s;z-index:20;pointer-events:none;white-space:nowrap;
 }
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
-.toast.toast-top{bottom:auto;top:145px;transform:translateX(-50%) translateY(-8px);}
+.toast.toast-top{bottom:auto;top:104px;transform:translateX(-50%) translateY(-8px);}
 .toast.toast-top.show{transform:translateX(-50%) translateY(0);}
 </style>
 </head>

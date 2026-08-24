@@ -302,6 +302,7 @@ function cacheEls(){
 
   els.circlesList = document.getElementById('circles-list');
   els.circlesMascot = document.getElementById('circles-mascot');
+  els.circlesScreenContent = document.querySelector('#screen-circles > .screen-content');
   els.btnFabCreate = document.getElementById('btn-fab-create');
   els.deleteModal = document.getElementById('delete-modal');
   els.deleteSubText = document.getElementById('delete-sub-text');
@@ -610,11 +611,16 @@ function setTag(el, category){
 /* ===== Toast ===== */
 var toastTimer = null;
 function showToast(msg){
+  var onCircles = Echo.screen === 'circles';
   els.toast.textContent = msg;
-  els.toast.classList.toggle('toast-top', Echo.screen === 'circles');
+  els.toast.classList.toggle('toast-top', onCircles);
+  if (els.circlesScreenContent) els.circlesScreenContent.classList.toggle('toast-space', onCircles);
   els.toast.classList.add('show');
   clearTimeout(toastTimer);
-  toastTimer = setTimeout(function(){ els.toast.classList.remove('show'); }, 2600);
+  toastTimer = setTimeout(function(){
+    els.toast.classList.remove('show');
+    if (els.circlesScreenContent) els.circlesScreenContent.classList.remove('toast-space');
+  }, 2600);
 }
 
 /* ===== Navigation ===== */
