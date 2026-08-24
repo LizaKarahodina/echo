@@ -815,6 +815,7 @@ var LANG_LABEL = { uk: 'UA', en: 'EN' };
 var STRINGS = {
   appTitle: { uk: 'Мої діалоги', en: 'My dialogs' },
   emptyGreeting: { uk: 'Привіт!', en: 'Hi!' },
+  emptyGreetingName: { uk: 'Привіт, {name}!', en: 'Hi, {name}!' },
   emptyDesc: { uk: 'Я буду рости, поки ти дізнаватимешся більше про людей і про себе ✨', en: 'I will grow as you learn more about people and about yourself ✨' },
   createDialog: { uk: 'Створити діалог', en: 'Start a dialog' },
   newDialogTitle: { uk: 'Новий діалог', en: 'New dialog' },
@@ -1308,11 +1309,22 @@ function circleCardEl(c){
   return div;
 }
 
+function userFirstName(){
+  var meta = Echo.session && Echo.session.user && Echo.session.user.user_metadata;
+  var full = meta && (meta.full_name || meta.name);
+  if (!full) return null;
+  return full.trim().split(/\s+/)[0];
+}
+
 function emptyCardEl(){
   var div = document.createElement('div');
   div.className = 'circle-card-empty';
+  var name = userFirstName();
+  var greeting = name
+    ? STRINGS.emptyGreetingName[Echo.lang].replace('{name}', escapeHtml(name))
+    : STRINGS.emptyGreeting[Echo.lang];
   div.innerHTML =
-    '<h2 class="voice">' + STRINGS.emptyGreeting[Echo.lang] + '</h2>' +
+    '<h2 class="voice">' + greeting + '</h2>' +
     '<p>' + STRINGS.emptyDesc[Echo.lang] + '</p>' +
     '<div class="divider"></div>' +
     '<button class="btn btn-primary btn-block" id="btn-empty-create"><span class="icon" data-icon="plus"></span>' + STRINGS.createDialog[Echo.lang] + '</button>';
