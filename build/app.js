@@ -65,7 +65,7 @@ function sendMagicLink(){
       console.error('signInWithOtp failed', res.error);
       return;
     }
-    showToast(STRINGS.authLinkSent[Echo.lang]);
+    showToast(STRINGS.authLinkSent[Echo.lang], { wrap: true, duration: 4200 });
   });
 }
 
@@ -245,7 +245,7 @@ var STRINGS = {
   authEmailLabel: { uk: 'Пошта', en: 'Email' },
   authEmailError: { uk: 'Введи коректну пошту', en: 'Enter a valid email' },
   authSendLink: { uk: 'Надіслати посилання', en: 'Send magic link' },
-  authLinkSent: { uk: 'Перевір пошту — ми надіслали посилання для входу ✨', en: 'Check your email — we sent you a sign-in link ✨' },
+  authLinkSent: { uk: 'Перевір пошту — ми надіслали посилання для входу ✨ Й зазирни у Спам — листи іноді туди тікають 🙈', en: 'Check your email — we sent a sign-in link ✨ And peek into Spam too — emails sometimes wander off 🙈' },
   authError: { uk: 'Щось пішло не так. Спробуй ще раз.', en: 'Something went wrong. Please try again.' },
   authGoogle: { uk: 'Продовжити з Google', en: 'Continue with Google' },
   authGuest: { uk: 'Продовжити без входу', en: 'Continue without an account' },
@@ -628,18 +628,20 @@ function setTag(el, category){
 
 /* ===== Toast ===== */
 var toastTimer = null;
-function showToast(msg){
+function showToast(msg, opts){
+  opts = opts || {};
   var onCircles = Echo.screen === 'circles';
   var onTop = onCircles || Echo.screen === 'auth';
   els.toast.textContent = msg;
   els.toast.classList.toggle('toast-top', onTop);
+  els.toast.classList.toggle('wrap', !!opts.wrap);
   if (els.circlesScreenContent) els.circlesScreenContent.classList.toggle('toast-space', onCircles);
   els.toast.classList.add('show');
   clearTimeout(toastTimer);
   toastTimer = setTimeout(function(){
     els.toast.classList.remove('show');
     if (els.circlesScreenContent) els.circlesScreenContent.classList.remove('toast-space');
-  }, 2600);
+  }, opts.duration || 2600);
 }
 
 /* ===== Navigation ===== */
