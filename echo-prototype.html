@@ -1703,7 +1703,11 @@ function bindEvents(){
     Echo.selectedCategory = card.getAttribute('data-category');
   });
 
-  els.drawCard.addEventListener('click', flipToBack);
+  els.drawCard.addEventListener('click', function(){
+    var c = Echo.current;
+    if (!c) return;
+    if (c.flipped) onSkip(); else flipToBack();
+  });
   els.btnSkip.addEventListener('click', onSkip);
   els.btnAnswered.addEventListener('click', onAnswered);
   els.btnViewNotesComplete.addEventListener('click', goNotes);
