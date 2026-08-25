@@ -57,16 +57,15 @@ function sendMagicLink(){
     els.authEmail.focus();
     return;
   }
-  els.authStatusText.textContent = STRINGS.authSending[Echo.lang];
   loadSupabase().then(function(client){
     return client.auth.signInWithOtp({ email: email, options: { emailRedirectTo: cleanRedirectUrl() } });
   }).then(function(res){
     if (res.error){
-      els.authStatusText.textContent = STRINGS.authError[Echo.lang];
+      showToast(STRINGS.authError[Echo.lang]);
       console.error('signInWithOtp failed', res.error);
       return;
     }
-    els.authStatusText.textContent = STRINGS.authLinkSent[Echo.lang];
+    showToast(STRINGS.authLinkSent[Echo.lang]);
   });
 }
 
@@ -81,7 +80,7 @@ function continueAsGuest(){
     return client.auth.signInAnonymously();
   }).then(function(res){
     if (res.error){
-      els.authStatusText.textContent = STRINGS.authError[Echo.lang];
+      showToast(STRINGS.authError[Echo.lang]);
       console.error('signInAnonymously failed', res.error);
     }
   });
@@ -246,7 +245,6 @@ var STRINGS = {
   authEmailLabel: { uk: 'Пошта', en: 'Email' },
   authEmailError: { uk: 'Введи коректну пошту', en: 'Enter a valid email' },
   authSendLink: { uk: 'Надіслати посилання', en: 'Send magic link' },
-  authSending: { uk: 'Надсилаємо…', en: 'Sending…' },
   authLinkSent: { uk: 'Перевір пошту — ми надіслали посилання для входу ✨', en: 'Check your email — we sent you a sign-in link ✨' },
   authError: { uk: 'Щось пішло не так. Спробуй ще раз.', en: 'Something went wrong. Please try again.' },
   authGoogle: { uk: 'Продовжити з Google', en: 'Continue with Google' },
@@ -315,7 +313,6 @@ function cacheEls(){
   els.authMascot = document.getElementById('auth-mascot');
   els.authEmail = document.getElementById('auth-email');
   els.authEmailError = document.getElementById('auth-email-error');
-  els.authStatusText = document.getElementById('auth-status-text');
   els.btnAuthMagicLink = document.getElementById('btn-auth-magic-link');
   els.btnAuthGoogle = document.getElementById('btn-auth-google');
   els.btnAuthGuest = document.getElementById('btn-auth-guest');
@@ -633,8 +630,9 @@ function setTag(el, category){
 var toastTimer = null;
 function showToast(msg){
   var onCircles = Echo.screen === 'circles';
+  var onTop = onCircles || Echo.screen === 'auth';
   els.toast.textContent = msg;
-  els.toast.classList.toggle('toast-top', onCircles);
+  els.toast.classList.toggle('toast-top', onTop);
   if (els.circlesScreenContent) els.circlesScreenContent.classList.toggle('toast-space', onCircles);
   els.toast.classList.add('show');
   clearTimeout(toastTimer);
@@ -1042,7 +1040,6 @@ function bindEvents(){
   els.authEmail.addEventListener('input', function(){
     els.authEmailError.classList.remove('show');
     els.authEmail.style.borderColor = '';
-    els.authStatusText.textContent = '';
   });
   els.authEmail.addEventListener('keydown', function(e){
     if (e.key === 'Enter') sendMagicLink();
