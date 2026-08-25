@@ -364,6 +364,12 @@ body{
 .auth-header p{margin:0;font-size:16px;line-height:1.5;color:var(--text-secondary);opacity:.7;}
 #auth-status-text{font-size:16px;color:var(--text-secondary);opacity:.7;text-align:center;margin:0;}
 #auth-status-text:empty{display:none;}
+.auth-guest-link{
+  background:transparent;border:none;padding:8px;margin:0 auto;display:block;
+  font-family:inherit;font-size:16px;color:var(--text-secondary);opacity:.7;
+  text-decoration:underline;text-underline-offset:2px;cursor:pointer;
+}
+.auth-guest-link:hover,.auth-guest-link:active{opacity:1;}
 
 /* ===== Toast ===== */
 .toast{
@@ -417,6 +423,7 @@ body{
       <div class="divider"></div>
 
       <button class="btn btn-secondary btn-block" id="btn-auth-google" data-i18n="authGoogle">Продовжити з Google</button>
+      <button class="auth-guest-link" id="btn-auth-guest" data-i18n="authGuest">Продовжити без входу</button>
     </div>
   </div>
 

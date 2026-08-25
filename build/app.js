@@ -76,6 +76,17 @@ function signInWithGoogle(){
   });
 }
 
+function continueAsGuest(){
+  loadSupabase().then(function(client){
+    return client.auth.signInAnonymously();
+  }).then(function(res){
+    if (res.error){
+      els.authStatusText.textContent = STRINGS.authError[Echo.lang];
+      console.error('signInAnonymously failed', res.error);
+    }
+  });
+}
+
 function signOut(){
   if (!supabase) return;
   supabase.auth.signOut();
@@ -239,6 +250,7 @@ var STRINGS = {
   authLinkSent: { uk: 'Перевір пошту — ми надіслали посилання для входу ✨', en: 'Check your email — we sent you a sign-in link ✨' },
   authError: { uk: 'Щось пішло не так. Спробуй ще раз.', en: 'Something went wrong. Please try again.' },
   authGoogle: { uk: 'Продовжити з Google', en: 'Continue with Google' },
+  authGuest: { uk: 'Продовжити без входу', en: 'Continue without an account' },
   storyCompleteTitle: { uk: 'Ваша історія завершилась ✨', en: 'Your story has ended ✨' },
   storyCompleteSubtitle: { uk: 'Іскра, з якої все почалося, стала частиною вашої спільної історії.', en: 'The spark that started it all has become part of your shared history.' },
   viewNotes: { uk: 'Переглянути нотатки', en: 'View notes' }
@@ -306,6 +318,7 @@ function cacheEls(){
   els.authStatusText = document.getElementById('auth-status-text');
   els.btnAuthMagicLink = document.getElementById('btn-auth-magic-link');
   els.btnAuthGoogle = document.getElementById('btn-auth-google');
+  els.btnAuthGuest = document.getElementById('btn-auth-guest');
   els.btnSignOut = document.getElementById('btn-sign-out');
 
   els.circlesList = document.getElementById('circles-list');
@@ -1025,6 +1038,7 @@ function backFromNotes(){
 function bindEvents(){
   els.btnAuthMagicLink.addEventListener('click', sendMagicLink);
   els.btnAuthGoogle.addEventListener('click', signInWithGoogle);
+  els.btnAuthGuest.addEventListener('click', continueAsGuest);
   els.authEmail.addEventListener('input', function(){
     els.authEmailError.classList.remove('show');
     els.authEmail.style.borderColor = '';
