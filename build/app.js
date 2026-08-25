@@ -65,7 +65,7 @@ function sendMagicLink(){
       console.error('signInWithOtp failed', res.error);
       return;
     }
-    showToast(STRINGS.authLinkSent[Echo.lang], { wrap: true, duration: 4200 });
+    showToast(STRINGS.authLinkSent[Echo.lang], { duration: 4200 });
   });
 }
 
@@ -634,7 +634,6 @@ function showToast(msg, opts){
   var onTop = onCircles || Echo.screen === 'auth';
   els.toast.textContent = msg;
   els.toast.classList.toggle('toast-top', onTop);
-  els.toast.classList.toggle('wrap', !!opts.wrap);
   if (els.circlesScreenContent) els.circlesScreenContent.classList.toggle('toast-space', onCircles);
   els.toast.classList.add('show');
   clearTimeout(toastTimer);

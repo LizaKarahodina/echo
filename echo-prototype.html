@@ -377,9 +377,8 @@ body{
   border:1px solid var(--border-active);box-shadow:var(--card-glow);
   padding:12px 20px;border-radius:999px;color:#fff;font-size:16px;
   opacity:0;transition:opacity .3s, transform .3s;z-index:20;pointer-events:none;
-  white-space:nowrap;text-align:center;
+  white-space:normal;overflow-wrap:break-word;text-align:center;
 }
-.toast.wrap{white-space:normal;}
 .toast.show{opacity:1;transform:translateY(0);}
 .toast.toast-top{bottom:auto;top:104px;transform:translateY(-8px);}
 .toast.toast-top.show{transform:translateY(0);}
@@ -693,7 +692,7 @@ function sendMagicLink(){
       console.error('signInWithOtp failed', res.error);
       return;
     }
-    showToast(STRINGS.authLinkSent[Echo.lang], { wrap: true, duration: 4200 });
+    showToast(STRINGS.authLinkSent[Echo.lang], { duration: 4200 });
   });
 }
 
@@ -1262,7 +1261,6 @@ function showToast(msg, opts){
   var onTop = onCircles || Echo.screen === 'auth';
   els.toast.textContent = msg;
   els.toast.classList.toggle('toast-top', onTop);
-  els.toast.classList.toggle('wrap', !!opts.wrap);
   if (els.circlesScreenContent) els.circlesScreenContent.classList.toggle('toast-space', onCircles);
   els.toast.classList.add('show');
   clearTimeout(toastTimer);
